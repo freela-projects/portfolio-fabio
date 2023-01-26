@@ -1,5 +1,6 @@
 import { Slide, SlideShow, Slider } from "./styles"
 import { useState, useEffect, useRef } from "react"
+import Transition from "../Transition"
 
 interface SlidesProps {
     images: {
@@ -37,6 +38,7 @@ function Slides({ images }: SlidesProps) {
       }, [currentSlide])
 
     return (
+      <Transition>
         <SlideShow>
             <Slider 
                 style={{ transform: `translate3d(${-currentSlide * 100}%, 0, 0)` }}>
@@ -45,6 +47,7 @@ function Slides({ images }: SlidesProps) {
                 ))}
             </Slider>
         </SlideShow>
+      </Transition>
     )
 }
 

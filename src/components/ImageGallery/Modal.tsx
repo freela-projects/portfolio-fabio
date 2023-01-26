@@ -1,5 +1,5 @@
 import { Background, HStack, VStack } from "./styles"
-import { MdArrowBackIosNew, MdArrowForwardIos, MdClose } from "react-icons/Md"
+import { MdArrowBackIosNew, MdArrowForwardIos, MdClose } from "react-icons/md"
 
 interface ModalProps {
     imagePath: string
