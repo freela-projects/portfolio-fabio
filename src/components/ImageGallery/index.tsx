@@ -1,6 +1,7 @@
 import { Container } from "./styles"
 import { useState } from "react"
 import Modal from "./Modal";
+import Transition from "../Transition";
 
 interface GalleryProps {
     images: {
@@ -35,29 +36,32 @@ function ImageGallery(props: GalleryProps){
     }
 
     return (
-        <Container>
-            {
-                images.map((image, index) => {
-                    return (
-                        <img
-                            key={image.id}
-                            src={image.url}
-                            onClick={() => {
-                                setCurrentSlide(index)
-                                setShowGallery(true)
-                            }}
-                        />
-                    )
-                })
-            }
-            {
-                showGallery && <Modal 
-                                    imagePath={images[currentSlide].url} 
-                                    nextSlide={handleNextSlide} 
-                                    previousSlide={handlePreviousSlide}
-                                    close={handleClose} />
-            }
-        </Container>
+        <Transition>
+            <Container>
+                
+                {
+                    images.map((image, index) => {
+                        return (
+                            <img
+                                key={image.id}
+                                src={image.url}
+                                onClick={() => {
+                                    setCurrentSlide(index)
+                                    setShowGallery(true)
+                                }}
+                            />
+                        )
+                    })
+                }
+                {
+                    showGallery && <Modal 
+                                        imagePath={images[currentSlide].url} 
+                                        nextSlide={handleNextSlide} 
+                                        previousSlide={handlePreviousSlide}
+                                        close={handleClose} />
+                }
+            </Container>
+        </Transition>
     )
 }
 
