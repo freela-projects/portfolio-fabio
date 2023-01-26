@@ -1,11 +1,13 @@
 import Main from "../components/Main"
 import Navbar from "../components/Navbar"
+import Slides from "../components/Slides"
+import { images } from "../data/fake-data/home"
 
 function Home() {
   return (
-    <Main>
+    <Main disablePadding>
         <Navbar />
-      <h1>Home</h1>
+      <Slides images={images}/>
     </Main>
   )
 }
