@@ -45,7 +45,7 @@ const Container = styled.section`
     @media (min-width: 768px) {
         max-width: 70%;
         margin-left: 80px;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     img{
