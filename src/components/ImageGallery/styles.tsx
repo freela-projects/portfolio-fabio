@@ -9,6 +9,9 @@ interface StackViewProps {
     height?: string
     justifyContent?: "center" | "space-around" | "space-between" | "flex-start" | "flex-end"
     alignItems?: "center" | "flex-start" | "flex-end"
+    flexWrap?: "wrap" | "nowrap"
+    margin?: string | number
+
 }
 
 const Background = styled.div`
@@ -62,11 +65,13 @@ const Container = styled.section`
 const HStack = styled.div`
     display: flex;
     flex-direction: row;
+    flex-wrap: ${(props: StackViewProps) => props.flexWrap ? props.flexWrap : "nowrap"};
     width: ${(props: StackViewProps) => props.width ? props.width : "100%"};
     height: ${(props: StackViewProps) => props.height ? props.height : "auto"};
     align-items: ${(props: StackViewProps) => props.alignItems ? props.alignItems : "center"};
     justify-content: ${(props: StackViewProps) => props.justifyContent ? props.justifyContent : "center"};
     padding: 5px;
+    margin: ${(props: StackViewProps) => props.margin ? props.margin : "0"};
 `
 
 const VStack = styled.div`
@@ -77,6 +82,7 @@ const VStack = styled.div`
     align-items: ${(props: StackViewProps) => props.alignItems ? props.alignItems : "center"};
     justify-content: ${(props: StackViewProps) => props.justifyContent ? props.justifyContent : "center"};
     padding: 5px;
+    margin: ${(props: StackViewProps) => props.margin ? props.margin : "0"};
 `
 
 export { Background, Container, HStack, VStack }
