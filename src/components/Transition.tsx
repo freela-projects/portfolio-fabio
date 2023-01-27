@@ -9,6 +9,8 @@ const Transition = styled.div`
             opacity: 100;
         }
     }
+
+    width: 100%;
     animation: load-page 2s ;
 `
 export default Transition;
