@@ -8,7 +8,7 @@ const Nav = styled.nav`
     align-items: center;
     position: relative;
     width: 100%;
-    min-height: 80px;
+    height: 200px;
     background-color: #000000ab;
     z-index: 2;
 

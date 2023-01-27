@@ -32,9 +32,9 @@ const Background = styled.div`
     user-select: none;
 
     img{
-        transform: scale(0.8);
+        transform: scale(0.3);
         @media (min-width: 768px) {
-            transform: scale(2);
+            transform: scale(0.5);
         }
     }
 `
@@ -45,7 +45,7 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0;
+  margin-top: 10%;
 
   @media only screen and (min-width: 768px) {
       margin: 30px 20px 0 20px;
