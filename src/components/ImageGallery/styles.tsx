@@ -40,28 +40,29 @@ const Background = styled.div`
 `
 
 const Container = styled.section`
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    
-    @media (min-width: 768px) {
-        max-width: 70%;
-        margin-left: 80px;
-        justify-content: flex-start;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
 
-    img{
-        width: 100%;
-        object-fit: cover;
-        margin: ${(props: ImageProps) => props.disableMargin ? "0" : "10px"};
-     
-        @media (min-width: 768px) {
-            margin: 5px;
-            max-width: 180px;
-         }
+  @media only screen and (min-width: 768px) {
+      margin: 30px 20px 0 20px;
+      width: 95%;
     }
 `
+const Box = styled.div`
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ 
+ @media only screen and (min-width: 768px) {
+    flex-direction: row;    
+    margin-right: 280px;
+    }
+`
+
 const HStack = styled.div`
     display: flex;
     flex-direction: row;
@@ -85,4 +86,15 @@ const VStack = styled.div`
     margin: ${(props: StackViewProps) => props.margin ? props.margin : "0"};
 `
 
-export { Background, Container, HStack, VStack }
+const Images = styled.div`
+  display: flex;
+  flex-direction: column;
+  
+  img{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+  }
+`
+
+export { Background, Container, Box, HStack, VStack, Images }
