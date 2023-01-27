@@ -4,6 +4,7 @@ import Main from "../components/Main"
 import Navbar from "../components/Navbar"
 import Text from "../components/Text"
 
+
 function About() {
     return (
         <Main 
