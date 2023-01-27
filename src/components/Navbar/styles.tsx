@@ -10,12 +10,13 @@ const Nav = styled.nav`
     width: 100%;
     min-height: 80px;
     background-color: #000000ab;
+    z-index: 2;
 
   @media (min-width: 768px) {
       position: fixed;
       top: 0;
       left: auto;
-      right: 80px;
+      right: 40px;
       z-index: 1;
       width: 250px;
       height: 100%;
@@ -64,12 +65,17 @@ const NavLink = styled(Link)`
 `;
 const TextLogo = styled.p`
     width: 250px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 900;
     margin: 0;
     padding-right: 30px;
     padding-top: 30px;
     text-align: right;
+
+    span{
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
 
     @media (min-width: 768px) {
         padding-right: 0;

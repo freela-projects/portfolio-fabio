@@ -38,11 +38,11 @@ function ImageGallery(props: GalleryProps){
     return (
         <Transition>
             <Container>
-                
                 {
                     images.map((image, index) => {
                         return (
                             <img
+                                loading="lazy"
                                 key={image.id}
                                 src={image.url}
                                 onClick={() => {
