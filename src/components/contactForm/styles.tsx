@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ContactFormContainer = styled.div`
-   
     width: 100%;
     margin-top: 30px;
 
@@ -75,6 +74,5 @@ export const ContactFormContainer = styled.div`
            padding: 10px;
         }
     }
-
 
 `
