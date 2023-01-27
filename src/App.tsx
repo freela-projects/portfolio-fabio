@@ -8,6 +8,7 @@ import Gastronomy from './pages/Gastronomy';
 import Restores from "./pages/Restores"
 import About from "./pages/About"
 import Essays from './pages/Essays';
+import ContactMe from "./pages/Contactme"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/ens" element={<Essays/>} />
         <Route path="/res" element={<Restores/>} />
         <Route path="/sob" element={<About/>} />
+        <Route path="/con" element={<ContactMe/>} />
 
       </Routes>
     </BrowserRouter>
