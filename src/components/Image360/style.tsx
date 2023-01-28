@@ -17,33 +17,40 @@ const Image360Container = styled.section`
         margin-bottom: 100px;
     }
 
+
     @media (min-width: 768px) {
-        width: 77vw;
+        width: calc(100% - 300px);
         align-items: center;
         justify-content: center;
         margin-top: 50px;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: rebeccapurple;
+        align-content:start;
 
-        :first-of-type div {
-            display: flex;
-            flex-direction: column;
+        h5{
+            width: 100%;
+        }
+    
+        div:first-of-type {
+            width: 78%;
+            height: 60vh;
+            outline: none;
+            border: none;
+            
         }
     }
 
+    
 `
 
 const Image360Box = styled.div`
 
     display: flex;
     width: 90%;
-    
     flex-direction: column;
     margin: 15px 0 15px 0;
     border-radius: 5px;
    
-
     iframe{
         border-radius: 5px;  
         height: 65vw ;
@@ -59,32 +66,23 @@ const Image360Box = styled.div`
         text-decoration: underline;
         font-style: italic;
     }
-
+    
     @media (min-width: 768px) {
-        
-        
 
-        .miniature{
-            position: relative;
-            overflow: hidden;
-            max-width: 200;
-            max-height: 230px;
-            margin-left: 20px;
-            padding: 5px;
-            border: 1px #fff solid;
-           
-        }
+        width: 20vw;
+        height: 20vw;
+        padding: 15px;
+        
 
         iframe{
-            min-width: 85%;
-            min-height: 85%;
-            zoom: 0.2;
-            outline: none;
-            border:none
-
+            width: 100%;
+            height: 100%;
         }
         
+        
     }
+
+
         
 `
 
