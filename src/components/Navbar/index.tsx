@@ -13,7 +13,7 @@ function Navbar() {
             <NavLinks>
                 <NavLink to="/" active={isActive("/")}>Início</NavLink>
                 <NavLink to="/arq" active={isActive("/arq")}>Arquitetura</NavLink>
-                <NavLink to="/360" active={isActive("/360")}>Tour 360 graus</NavLink>
+                <NavLink to="/i360" active={isActive("/i360")}>Tour 360 graus</NavLink>
                 <NavLink to="/art" active={isActive("/art")}>Obras de Arte</NavLink>
                 <NavLink to="/gas" active={isActive("/gas")}>Gastronomia</NavLink>
                 <NavLink to="/eve" active={isActive("/eve")}>Eventos</NavLink>
