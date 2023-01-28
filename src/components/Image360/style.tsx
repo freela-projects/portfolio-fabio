@@ -17,7 +17,6 @@ const Image360Container = styled.section`
         margin-bottom: 100px;
     }
 
-
     @media (min-width: 768px) {
         width: calc(100% - 300px);
         align-items: center;
@@ -35,16 +34,11 @@ const Image360Container = styled.section`
             width: 78%;
             height: 60vh;
             outline: none;
-            border: none;
-            
+            border: none;  
         }
-    }
-
-    
+    }  
 `
-
 const Image360Box = styled.div`
-
     display: flex;
     width: 90%;
     flex-direction: column;
@@ -56,34 +50,28 @@ const Image360Box = styled.div`
         height: 65vw ;
     }
 
-    a {
+    a{
         text-decoration: none;
         color: #fff;
         line-height: 1.3;
         margin-top: 5px;
     }
+
     span{
         text-decoration: underline;
         font-style: italic;
     }
     
     @media (min-width: 768px) {
-
         width: 20vw;
         height: 20vw;
         padding: 15px;
-        
 
         iframe{
             width: 100%;
             height: 100%;
         }
-        
-        
-    }
-
-
-        
+    }        
 `
 
 export { Image360Container, Image360Box }
