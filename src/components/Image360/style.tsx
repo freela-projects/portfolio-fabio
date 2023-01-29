@@ -19,7 +19,6 @@ const Image360Container = styled.section`
         }
     }
 
-
     @media (min-width: 768px) {
         width: calc(100% - 300px);
         align-items: center;
