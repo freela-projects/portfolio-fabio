@@ -14,7 +14,7 @@ function Navbar() {
             <NavLinks>
                 <NavLink to="/" active={isActive("/")}>{translate('home')}</NavLink>
                 <NavLink to="/arq" active={isActive("/arq")}>{translate('architecture')}</NavLink>
-                <NavLink to="/360" active={isActive("/i360")}>{translate('Tour360')}</NavLink>
+                <NavLink to="/i360" active={isActive("/i360")}>{translate('Tour360')}</NavLink>
                 <NavLink to="/art" active={isActive("/art")}>{translate('arts')}</NavLink>
                 <NavLink to="/gas" active={isActive("/gas")}>{translate('cuisine')}</NavLink>
                 <NavLink to="/eve" active={isActive("/eve")}>{translate('events')}</NavLink>
