@@ -45,8 +45,8 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 10%;
-
+  margin-top: 15%;
+  
   @media only screen and (min-width: 768px) {
       margin: 30px 20px 0 20px;
       width: 95%;
@@ -55,7 +55,7 @@ const Container = styled.section`
 const Box = styled.div`
  display: flex;
  flex-direction: column;
- justify-content: space-around;
+ justify-content: space-between;
  
  @media only screen and (min-width: 768px) {
     flex-direction: row;    
@@ -89,11 +89,21 @@ const VStack = styled.div`
 const Images = styled.div`
   display: flex;
   flex-direction: column;
-  
   img{
     width: 100%;
     padding: 5px;
     border-radius: 5px;
+
+    :hover{
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: 0.5s;
+
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+   width: 32.5%;
   }
 `
 
