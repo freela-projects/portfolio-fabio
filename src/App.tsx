@@ -9,6 +9,7 @@ import Restores from "./pages/Restores"
 import About from "./pages/About"
 import Essays from './pages/Essays';
 import ContactMe from "./pages/Contactme"
+import Image360 from "./pages/Image360"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/art" element={<Arts/>} />
         <Route path="/arq" element={<Architecture/>} />
+        <Route path="/i360" element={<Image360/>} />
         <Route path="/gas" element={<Gastronomy/>} />
         <Route path="/ens" element={<Essays/>} />
         <Route path="/res" element={<Restores/>} />

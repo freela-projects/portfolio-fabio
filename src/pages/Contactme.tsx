@@ -1,4 +1,4 @@
-import ContactForm from "../components/contactForm"
+import ContactForm from "../components/ContactForm"
 import Main  from "../components/Main"
 import Navbar  from "../components/Navbar"
 
