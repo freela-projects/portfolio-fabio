@@ -13,9 +13,12 @@ const Image360Container = styled.section`
         text-align: center;
     }
 
-    div:last-child{
-        margin-bottom: 100px;
+    @media (max-width: 768px){
+        div:last-child{
+            margin-bottom: 100px;
+        }
     }
+
 
     @media (min-width: 768px) {
         width: calc(100% - 300px);
@@ -65,11 +68,12 @@ const Image360Box = styled.div`
     @media (min-width: 768px) {
         width: 20vw;
         height: 20vw;
-        padding: 15px;
-
+        padding: 10px;
+        
         iframe{
             width: 100%;
             height: 100%;
+            text-decoration: none;
         }
     }        
 `

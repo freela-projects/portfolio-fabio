@@ -20,8 +20,7 @@ function Image360Render(props: Image360Props){
                     images.map((image, index) => {
                         return <View image={image} key={index} />
                     })
-                }
-               
+                }   
             </Image360Container>
         </Transition>
     )
@@ -31,7 +30,7 @@ function View(props: any){
     const { image } = props; 
     return(
         <Image360Box>
-            <iframe allowFullScreen={true}src={`${image.url}`} autoCorrect='no' />
+            <iframe allowFullScreen={true} autoCapitalize='yes' src={`${image.url}`} autoCorrect='no' />
             <a href={image.url}>Confira: <span>{image.description}</span></a>
         </Image360Box>
     )
