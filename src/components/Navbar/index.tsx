@@ -1,5 +1,6 @@
 import { Nav, NavLinks, NavLink, TextLogo} from "./styles"
 import { useLocation } from "react-router-dom"
+import translate from "../../utils/translate"
 
 function Navbar() {
     const location = useLocation()
@@ -11,17 +12,17 @@ function Navbar() {
         <Nav>
             <TextLogo translate="no">Fabio Peixoto <span>Fotografia</span></TextLogo>
             <NavLinks>
-                <NavLink to="/" active={isActive("/")}>Início</NavLink>
-                <NavLink to="/arq" active={isActive("/arq")}>Arquitetura</NavLink>
-                <NavLink to="/360" active={isActive("/360")}>Tour 360 graus</NavLink>
-                <NavLink to="/art" active={isActive("/art")}>Obras de Arte</NavLink>
-                <NavLink to="/gas" active={isActive("/gas")}>Gastronomia</NavLink>
-                <NavLink to="/eve" active={isActive("/eve")}>Eventos</NavLink>
-                <NavLink to="/ens" active={isActive("/ens")}>Ensaios</NavLink>
-                <NavLink to="/res" active={isActive("/res")}>Restaurações</NavLink>
-                <NavLink to="/cli" active={isActive("/cli")}>Clientes</NavLink>
-                <NavLink to="/sob" active={isActive("/sob")}>Sobre</NavLink>
-                <NavLink to="/con" active={isActive("/con")}>Contato</NavLink>
+                <NavLink to="/" active={isActive("/")}>{translate('home')}</NavLink>
+                <NavLink to="/arq" active={isActive("/arq")}>{translate('architecture')}</NavLink>
+                <NavLink to="/360" active={isActive("/360")}>{translate('Tour360')}</NavLink>
+                <NavLink to="/art" active={isActive("/art")}>{translate('arts')}</NavLink>
+                <NavLink to="/gas" active={isActive("/gas")}>{translate('cuisine')}</NavLink>
+                <NavLink to="/eve" active={isActive("/eve")}>{translate('events')}</NavLink>
+                <NavLink to="/ens" active={isActive("/ens")}>{translate('essays')}</NavLink>
+                <NavLink to="/res" active={isActive("/res")}>{translate('restoration')}</NavLink>
+                <NavLink to="/cli" active={isActive("/cli")}>{translate('clients')}</NavLink>
+                <NavLink to="/sob" active={isActive("/sob")}>{translate('about')}</NavLink>
+                <NavLink to="/con" active={isActive("/con")}>{translate('contact')}</NavLink>
             </NavLinks>
         </Nav>
     )
