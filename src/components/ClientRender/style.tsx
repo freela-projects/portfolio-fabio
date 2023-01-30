@@ -28,7 +28,22 @@ const ClientsContainer = styled.section`
 
     img{
         width: 30vw;
-    }    
+    }
+    
+    @media (min-width: 768px) {
+        width: calc(100% - 300px);
+        margin-top: 50px;
+
+        h5{
+            font-size: 18px;
+            margin-bottom: 15px;
+
+        }
+
+        img{
+            max-width: 150px;
+        }
+    }
 `
 
 export { ClientsContainer };
