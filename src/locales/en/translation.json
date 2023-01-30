@@ -2,6 +2,8 @@
     "home": "Home",
     "architecture": "Architecture",
     "Tour360": "Tour 360",
+    "Tour360PageTitle": "360 PHOTOS | VIRTUAL TOUR",
+    "Tour360Href": "See",
     "arts": "Arts",
     "cuisine": "Cuisine",
     "events": "Events",
@@ -9,5 +11,12 @@
     "restoration": "Restorations",
     "clients": "Customers",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "contactNameLabel": "Name",
+    "contactEmailLabel": "Email",
+    "contactSubjectLabel": "Subject",
+    "contactMessageLabel": "Message",
+    "contactSocialNetworkFollowLabel": "Follow me on social networks",
+    "contactSendButton" : "send",
+    "motto": "Photograpy" 
  }
