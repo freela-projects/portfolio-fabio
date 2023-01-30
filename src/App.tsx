@@ -16,6 +16,7 @@ import Image360 from "./pages/Image360"
 import en from "./locales/en/translation.json"
 import pt from "./locales/pt/translation.json"
 import Clients from "./pages/Clients"
+import Events from "./pages/Events"
 
 function App() {
 const location = useLoation()
@@ -42,6 +43,7 @@ useEffect(()=>{
         <Route path="/res" element={<Restores/>} />
         <Route path="/sob" element={<About/>} />
         <Route path="/cli" element={<Clients/>} />
+        <Route path="/eve" element={<Events/>} />
         <Route path="/con" element={<ContactMe/>} />
 
       </Routes>
