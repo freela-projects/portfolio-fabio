@@ -2,6 +2,7 @@ import { ContactFormContainer } from "./styles";
 import { ImFacebook2 } from 'react-icons/im'
 import { GrInstagram } from 'react-icons/gr'
 import Transition from "../Transition";
+import translate from "../../utils/translate";
 
 function ContactForm(){
 
@@ -16,30 +17,30 @@ function ContactForm(){
 
                 <form action="https://formsubmit.co/thyago.devin@gmail.com" method="POST">
                     <div className="input">
-                        <label>Nome*</label>
+                        <label>{translate("contactNameLabel")}*</label>
                         <input type={'text'} name="name" required></input>
                     </div>
 
                     <div className="input">
-                        <label>Email*</label>
+                        <label>{translate("contactEmailLabel")}*</label>
                         <input type={'email'} name="email" required></input>
                     </div>
 
                     <div className="input">
-                        <label>Assunto*</label>
+                        <label>{translate("contactSubjectLabel")}*</label>
                         <input type={'text'} name="assunto" required></input>
                     </div>
                     
                     <div className="input message">
                     
-                            <label>Mensagem*</label>
+                            <label>{translate("contactMessageLabel")}*</label>
                             <textarea name="message"  required/>
                     
                         
                     </div>
 
                     <div className="button">
-                        <button type="submit" >Enviar</button>
+                        <button type="submit" >{translate("contactSendButton")}</button>
                     </div>
 
                     
@@ -49,7 +50,7 @@ function ContactForm(){
                 </form>
 
                 <div className="social">
-                        <p>Siga-me nas redes sociais</p>
+                        <p>{translate("contactSocialNetworkFollowLabel")}</p>
                         <div>
                             <ImFacebook2  onClick={()=>window.open('https://www.facebook.com/fabiopeixoto.fot.br')}/>
                             <p>Facebook</p>
