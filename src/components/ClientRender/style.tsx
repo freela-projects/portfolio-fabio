@@ -6,11 +6,12 @@ const ClientsContainer = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin: 20px 0 80px 0;
     
     h5{
         width: 90%;
         margin-bottom: 10px;
+        font-size: 16.5px;
     }
 
     div{
