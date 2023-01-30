@@ -6,17 +6,18 @@ const ClientsContainer = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 20px;
     
     h5{
         width: 90%;
+        margin-bottom: 10px;
     }
 
     div{
         display: flex;
         align-items: center;
         justify-content: center;
-        
+       
         div:first-child{
             width: 90%;
             display: flex;
@@ -37,7 +38,6 @@ const ClientsContainer = styled.section`
         h5{
             font-size: 18px;
             margin-bottom: 15px;
-
         }
 
         img{
