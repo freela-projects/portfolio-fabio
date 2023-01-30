@@ -15,6 +15,7 @@ import Image360 from "./pages/Image360"
 
 import en from "./locales/en/translation.json"
 import pt from "./locales/pt/translation.json"
+import Clients from "./pages/Clients"
 
 function App() {
 const location = useLoation()
@@ -33,6 +34,7 @@ const locale = userLocation === "BR" ? "pt" : "en"
         <Route path="/gas" element={<Gastronomy/>} />
         <Route path="/ens" element={<Essays/>} />
         <Route path="/res" element={<Restores/>} />
+        <Route path="/cli" element={<Clients/>} />
         <Route path="/sob" element={<About/>} />
         <Route path="/con" element={<ContactMe/>} />
 
