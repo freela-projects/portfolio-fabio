@@ -10,7 +10,7 @@ function Navbar() {
     }
     return (
         <Nav>
-            <TextLogo translate="no">Fabio Peixoto <span>Fotografia</span></TextLogo>
+            <TextLogo translate="no">Fabio Peixoto <span>{translate("motto")}</span></TextLogo>
             <NavLinks>
                 <NavLink to="/" active={isActive("/")}>{translate('home')}</NavLink>
                 <NavLink to="/arq" active={isActive("/arq")}>{translate('architecture')}</NavLink>

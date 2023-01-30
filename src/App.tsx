@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { Suspense, useState } from "react"
+import { Suspense, useState, useEffect } from "react"
 import { IntlProvider } from "react-intl"
 import useLoation from "./hooks/useLocation"
 import Home from './pages/Home'
@@ -15,16 +15,20 @@ import Image360 from "./pages/Image360"
 
 import en from "./locales/en/translation.json"
 import pt from "./locales/pt/translation.json"
-import Clients from "./pages/Clients"
-import Events from "./pages/Events"
 
 function App() {
 const location = useLoation()
 const userLocation = location?.country_code2
-const locale = userLocation === "BR" ? "pt" : "en"
+const [appLanguage, setAppLanguage] = useState("pt")
+
+useEffect(()=>{
+  if (userLocation) {
+      setAppLanguage(userLocation)
+  }
+}, [])
 
   return (
-    <IntlProvider locale={locale} messages={locale === "pt" ? pt : en}>
+    <IntlProvider locale={appLanguage} messages={appLanguage === "pt" ? pt : en}>
           <Suspense fallback={<div>Loading...</div>}>
           <BrowserRouter>
       <Routes>
@@ -35,8 +39,6 @@ const locale = userLocation === "BR" ? "pt" : "en"
         <Route path="/gas" element={<Gastronomy/>} />
         <Route path="/ens" element={<Essays/>} />
         <Route path="/res" element={<Restores/>} />
-        <Route path="/cli" element={<Clients/>} />
-        <Route path="/eve" element={<Events/>} />
         <Route path="/sob" element={<About/>} />
         <Route path="/con" element={<ContactMe/>} />
 
