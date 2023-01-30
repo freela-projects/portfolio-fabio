@@ -9,6 +9,8 @@ const Text = styled.text`
     padding: 0;
     width: 100%;
 
+
+
     @media (min-width: 768px) {
         max-width: 500px;
         margin-left: 10px;
