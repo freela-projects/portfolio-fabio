@@ -18,11 +18,29 @@ const PublicationContainer = styled.section`
     div{
         width: 90%;
         img{
-            width: 30vw;   
-            height: 39.6vw;
-            padding: 5px;
+            width: 27vw;   
+            height: 35.64vw;
+            margin: 5px;
+            border: 1px solid #fff;
         }
     }
+
+    @media (min-width: 768px) {
+        width: calc(100% - 300px);
+        margin-top: 15px;
+
+        h5{
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        img{
+            max-width: 200px;
+            max-height: 264px;
+            border: 1px solid #fff;
+        }
+    }
+
 `
 
 export { PublicationContainer }

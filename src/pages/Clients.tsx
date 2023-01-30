@@ -1,4 +1,5 @@
 import RenderClient from "../components/ClientRender"
+import { ClientAndPublications } from "../components/ClientsAndPublications"
 import Main from "../components/Main"
 import Navbar from "../components/Navbar"
 import PublicationRender from "../components/PublicationRender"
@@ -11,9 +12,11 @@ function Clients() {
   return (
     <Main disablePadding>
         <Navbar />
-        <PublicationRender images={publicationsImg}/>
-        <RenderClient images={clientsImg}/>
-        <ScrollTop />
+        <ClientAndPublications>
+          <PublicationRender images={publicationsImg}/>
+          <RenderClient images={clientsImg}/>
+          <ScrollTop />
+        </ClientAndPublications>
     </Main>
   )
 }
