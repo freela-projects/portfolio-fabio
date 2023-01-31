@@ -7,7 +7,6 @@ import ScrollTop from "../components/ScrollTop"
 function Restores() {
   return (
     <Main disablePadding>
-        <Navbar />
       <ImageGallery images={images}/>
       <ScrollTop />
     </Main>

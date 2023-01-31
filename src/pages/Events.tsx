@@ -6,7 +6,6 @@ import ImageGallery from "../components/ImageGallery"
 function Events() {
     return (
         <Main>
-            <Navbar />
             <ImageGallery images={images} />
         </Main>
     )

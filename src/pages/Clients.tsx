@@ -11,7 +11,6 @@ import { images as publicationsImg } from "../data/fake-data/clients"
 function Clients() {
   return (
     <Main disablePadding>
-        <Navbar />
         <ClientAndPublications>
           <PublicationRender images={publicationsImg}/>
           <RenderClient images={clientsImg}/>

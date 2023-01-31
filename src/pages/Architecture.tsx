@@ -7,10 +7,9 @@ import ScrollTop from "../components/ScrollTop"
 function Architecture() {
     return (
         <Main>
-            <Navbar />
             <ImageGallery images={images} />
             <ScrollTop />
-        </Main>
+        </Main>    
     )
     }
 
