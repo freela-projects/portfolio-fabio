@@ -7,7 +7,6 @@ import { images } from "../data/fake-data/images360"
 function Image360() {
   return (
     <Main disablePadding>
-        <Navbar />
         <Image360Render images={images}/>
         <ScrollTop />
     </Main>

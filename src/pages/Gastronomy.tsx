@@ -6,7 +6,6 @@ import ImageGallery from "../components/ImageGallery"
 function Gastronomy() {
     return (
         <Main>
-            <Navbar />
             <ImageGallery images={images} />
         </Main>
     )

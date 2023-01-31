@@ -1,13 +1,19 @@
+import { useEffect } from "react"
+import { Outlet, useNavigate } from "react-router-dom"
 import Main from "../components/Main"
 import Navbar from "../components/Navbar"
-import Slides from "../components/Slides"
-import { images } from "../data/fake-data/home"
 
 function Home() {
+  
+  const navigate = useNavigate();
+  useEffect(()=>{
+    navigate('/ini')
+  },[])
+
   return (
     <Main disablePadding>
         <Navbar />
-      <Slides images={images}/>
+        <Outlet />
     </Main>
   )
 }

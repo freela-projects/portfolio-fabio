@@ -6,7 +6,6 @@ import ImageGallery from "../components/ImageGallery"
 function Essays() {
     return (
         <Main>
-            <Navbar />
             <ImageGallery images={images} />
         </Main>
     )

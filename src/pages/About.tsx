@@ -1,7 +1,6 @@
 import { HStack, VStack } from "../components/ImageGallery/styles"
 import {BsInstagram, BsFacebook} from "react-icons/bs"
 import Main from "../components/Main"
-import Navbar from "../components/Navbar"
 import Text from "../components/Text"
 import translate from "../utils/translate"
 
@@ -9,7 +8,6 @@ function About() {
     return (
         <Main 
             style={{alignItems: "center", justifyContent:"center"}}>
-            <Navbar/>
             <HStack
                 justifyContent="center"
                 alignItems="center"

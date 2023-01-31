@@ -5,7 +5,6 @@ import Navbar  from "../components/Navbar"
 function ContactMe() {
     return (
         <Main>
-            <Navbar />
             <ContactForm/>
         </Main>
     )
