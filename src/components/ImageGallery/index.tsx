@@ -40,6 +40,17 @@ function ImageGallery(props: GalleryProps){
     const imageGroups = createImageGroups(viewWidth, images)
 
     useEffect(() => {
+
+        const keyboardEvents = (event: KeyboardEvent) => {
+            if(event.key === "ArrowRight"){
+                handleNextSlide()
+            } else if(event.key === "ArrowLeft"){
+                handlePreviousSlide()
+            } else if(event.key === "Escape"){
+                handleClose()
+            }
+        }
+        window.addEventListener("keydown", keyboardEvents)
         const onWidthChange = () => {
             setViewWidth(window.innerWidth)
         }
@@ -48,6 +59,7 @@ function ImageGallery(props: GalleryProps){
 
         return () => {
             window.removeEventListener("resize", onWidthChange)
+            window.removeEventListener("keydown", keyboardEvents)
         }
         
     }, [])
@@ -72,7 +84,7 @@ function ImageGallery(props: GalleryProps){
                                                     onClick={() => {
                                                         if (viewWidth < 768) return
                                                         setShowModal(true)
-                                                        setCurrentSlide(image.id - 1)
+                                                        setCurrentSlide(index)
                                                     }} />
                                   
                                         )
