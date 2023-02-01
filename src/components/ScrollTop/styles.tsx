@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
 const Button = styled.button`
-    background-color: #ffdf0f;
+    background-color: rgb(53, 120, 95);
     border: none;
     border-radius: 20px;
-    color: #000000;
+    color: #ffffff;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -19,12 +19,13 @@ const Button = styled.button`
     bottom: 0;
     z-index: 2;
     
-    :hover {
-        background-color: #000000;
-        color: #ffdf0f;
-    }
     @media (min-width: 768px) {
         width: auto;
+        
+        :hover {
+        background-color: #000000;
+        color: rgb(53, 120, 95);
+    }
     }
 `
 

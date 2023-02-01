@@ -50,7 +50,7 @@ const NavLink = styled(Link)`
     align-items: center;
     text-decoration: none;
     margin: 5px;
-    color: ${(props: NavLinkProps) => props.active === "true" ? "#ffdf0f" : "white"};
+    color: ${(props: NavLinkProps) => props.active === "true" ? "rgb(53, 120, 95)" : "white"};
     font-weight: ${(props: NavLinkProps) => props.active === "true" ? "900" : "400"};
 
     :hover {
