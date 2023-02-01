@@ -70,6 +70,7 @@ function ImageGallery(props: GalleryProps){
                                                     src={image.url} 
                                                     alt="Gallery Image" 
                                                     onClick={() => {
+                                                        if (viewWidth < 768) return
                                                         setShowModal(true)
                                                         setCurrentSlide(image.id - 1)
                                                     }} />
