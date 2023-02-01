@@ -51,16 +51,15 @@ const NavLink = styled(Link)`
     text-decoration: none;
     margin: 5px;
     color: ${(props: NavLinkProps) => props.active === "true" ? "rgb(53, 120, 95)" : "white"};
-    font-weight: ${(props: NavLinkProps) => props.active === "true" ? "900" : "400"};
-
-    :hover {
-        color: #ffdf0f;
-        transition: all 0.3s ease-in-out;
-    }
-
+    
     @media (min-width: 768px) {
         margin: 0;
         font-size: 1.5rem;
+        font-weight: ${(props: NavLinkProps) => props.active === "true" ? "900" : "400"};
+        :hover {
+            color: "rgb(53, 120, 95)";
+            transition: all 0.3s ease-in-out;
+        }
     }
 `;
 const TextLogo = styled.p`
