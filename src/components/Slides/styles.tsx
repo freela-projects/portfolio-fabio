@@ -4,7 +4,7 @@ const SlideShow = styled.div`
   margin: 0 auto;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   white-space: nowrap;
 `
 interface SliderProps {
@@ -23,10 +23,13 @@ const fadeInOut = keyframes`
 `
 const Slider = styled.div`
   opacity: 0;
-  animation: ${fadeInOut} 2.5s ease-in-out;
+  animation: ${fadeInOut} 2.0s ease-out;
+  position: fixed;
+  top: 0;
+  bottom: 0;
 `
 const Slide = styled.img`   
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: inline-block;
   object-fit: cover;

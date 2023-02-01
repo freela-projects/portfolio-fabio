@@ -9,7 +9,7 @@ const Nav = styled.nav`
     position: relative;
     width: 100%;
     height: 200px;
-    background-color: #000000ab;
+    background-color: #00000073;
     z-index: 2;
 
   @media (min-width: 768px) {

@@ -1,6 +1,5 @@
 import { Slide, SlideShow, Slider } from "./styles"
 import { useState, useEffect, useRef } from "react"
-import Transition from "../Transition"
 
 interface SlidesProps {
   images: {
@@ -12,7 +11,7 @@ interface SlidesProps {
 function Slides({ images }: SlidesProps) {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [show, setShow] = useState(false)
-  const delay = 2500
+  const delay = 2000
 
   const timeoutRef = useRef(null)
 
