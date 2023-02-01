@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, {keyframes} from "styled-components"
 
 const SlideShow = styled.div`
   margin: 0 auto;
@@ -10,9 +10,20 @@ const SlideShow = styled.div`
 interface SliderProps {
     translation: number
 }
+const fadeInOut = keyframes`
+    0% {
+        opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+`
 const Slider = styled.div`
-    white-space: nowrap;
-    transition: ease 1000ms;
+  opacity: 0;
+  animation: ${fadeInOut} 2.5s ease-in-out;
 `
 const Slide = styled.img`   
   height: 100vh;
