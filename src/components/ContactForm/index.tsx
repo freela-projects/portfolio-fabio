@@ -41,6 +41,7 @@ function ContactForm(){
                             <button type="submit" >{translate("contactSendButton")}</button>
                         </div>
                         <input type={'hidden'} name="_captcha" value="false" />
+                        <input type="hidden" name="_next" value="http://thyago.fun/sucess"></input>
 
                     </form>
 

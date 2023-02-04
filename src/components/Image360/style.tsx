@@ -110,18 +110,28 @@ const Vizu = styled.section`
   
     display: flex;
     position: absolute;
-    background-color: red;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
     z-index: 999;
+    background-color: rgba(255,255,255, 0.8) ;
     iframe{
         width: 100%;
         height: 100%;
+        border: 0;
+        z-index: 999;
+        
     }
     &.disabled{
         display: none;
+    }
+
+    svg{
+        z-index: 998;
+        position: absolute;
     }
 
     p{
@@ -130,8 +140,9 @@ const Vizu = styled.section`
         top: 0;
         padding: 10px 20px;
         margin:20px;
-        background-color: blue;
+        background-color: rgb(53, 120, 95);
         border-radius: 5px;
+        z-index: 999;
     }
 
 `

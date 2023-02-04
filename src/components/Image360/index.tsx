@@ -2,6 +2,7 @@ import Transition from "../Transition";
 import translate from "../../utils/translate";
 import { Image360Box, Image360Container, Vizu } from "./style";
 import { useState } from "react";
+import { InfinitySpin } from "react-loader-spinner";
 
 interface Image360Props {
     images: {
@@ -42,7 +43,10 @@ function View(props: any){
             <a onClick={()=>setViewActive(!viewActive)}>{translate("Tour360Href")}: <span>{image.description}</span></a>
 
             <Vizu className={`${viewActive? 'opend':'disabled'}`}>
-                <iframe allowFullScreen={true} autoCapitalize='yes' src={`${image.url}`} autoCorrect='no' />
+               
+
+                <InfinitySpin color='rgb(53, 120, 95)'/>
+                <iframe allowFullScreen={true} autoCapitalize='yes' src={`${image.url}`} autoCorrect='no'/>
                 <p onClick={()=>setViewActive(!viewActive)}>Voltar</p>
 
             </Vizu>
