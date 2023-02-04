@@ -71,21 +71,17 @@ const Image360Box = styled.div`
     margin: 15px 0 15px 0;
     border-radius: 5px;
 
-   
     img{
         border-radius: 5px;  
         height: 65vw ;
     }
     
-
     a{
         text-decoration: none;
         color: #fff;
         line-height: 1.3;
         margin-top: 5px;
         margin-left: 10px;
-
-        
     }
 
     span{
@@ -132,7 +128,6 @@ const Vizu = styled.section`
         background-color: blue;
         border-radius: 5px;
     }
-
 
 `
 
