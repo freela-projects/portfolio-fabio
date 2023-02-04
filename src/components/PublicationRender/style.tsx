@@ -1,32 +1,34 @@
 import styled from "styled-components";
 
 const PublicationContainer = styled.section`
-    width: 100%;
+    
     display: flex;
     align-items: center;
     flex-direction: column;
     
     h5{
-        margin-top: 35px;
+        width: 95%;
+        max-width: 800px;
+        margin-top: 25px;
         margin-bottom: 10px;
         font-size: 16.5px;
-        width: 90%;
         display: flex;
         align-items: flex-start;
     }
 
     div{
-        width: 90%;
+        
+        width: 100%;
+        line-height: 0;
+        
         img{
-            width: 27vw;   
-            height: 35.64vw;
-            margin: 5px;
-            border: 1px solid #fff;
+            width: 33.33vw;   
+            height: 38.64vw;
         }
     }
 
     @media (min-width: 768px) {
-        width: calc(100% - 300px);
+        width: calc(100% - 280px);
         margin-top: 15px;
 
         h5{
@@ -35,9 +37,17 @@ const PublicationContainer = styled.section`
         }
 
         img{
-            max-width: 200px;
-            max-height: 264px;
-            border: 1px solid #fff;
+            height: 171.6px;
+            max-width: 130px;
+            max-height: 171.6px;
+        }
+        div{
+            width: 100% ;
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: baseline;
+            flex-wrap: wrap;     
         }
     }
 

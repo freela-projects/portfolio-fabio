@@ -1,63 +1,153 @@
+import image1 from '../images/clientes/3 active.png'
+import image2 from '../images/clientes/abih 2.jpg'
+import image3 from '../images/clientes/a bofetada (2).png'
+import image4 from '../images/clientes/alpha fitness.png'
+import image5 from '../images/clientes/Andre_Guimaraes.png'
+import image6 from '../images/clientes/at arquitetura.png'
+import image7 from '../images/clientes/avignon 2.jpg'
+import image8 from '../images/clientes/blade 2.png'
+import image9 from '../images/clientes/Captura+de+Tela+(2).png'
+import image10 from '../images/clientes/cia baiana de patifaria 2.png'
+import image11 from '../images/clientes/city magazine 2.png'
+import image12 from '../images/clientes/escolinha guga 2.png'
+import image13 from '../images/clientes/espaco realle.png'
+import image14 from '../images/clientes/foto.jpg'
+import image15 from '../images/clientes/hell heaven 2.png'
+import image16 from '../images/clientes/ideia 3.png'
+import image17 from '../images/clientes/jaqueline miguez2.png'
+import image18 from '../images/clientes/lentrecote de paris 2.png'
+import image19 from '../images/clientes/licia fabio.png'
+import image20 from '../images/clientes/Lide_Logo_Int.png'
+import image21 from '../images/clientes/metro quadrado.jpg'
+import image22 from '../images/clientes/muntees.jpg'
+import image23 from '../images/clientes/petala.png'
+import image24 from '../images/clientes/redpig - vermelho2.png'
+import image25 from '../images/clientes/san sebastian 2.png'
+import image26 from '../images/clientes/saulo.jpg'
+import image27 from '../images/clientes/solar boa vista.png'
+import image28 from '../images/clientes/studio samuel cerqueira.png'
+import image29 from '../images/clientes/uci_orient_logo_site.png'
+import image30 from '../images/clientes/up universal projects.png'
+
+
 export const images = [
     {
         id: 1,
-        url: "https://static.wixstatic.com/media/62ab43_e49939fb1fef4d709fb2c821bb297b80.png/v1/fill/w_505,h_506,al_c,q_85,enc_auto/62ab43_e49939fb1fef4d709fb2c821bb297b80.png",
+        url: image1,
     },
-        
     {
         id: 2,
-        url: "https://static.wixstatic.com/media/62ab43_ccc099e3b9854a3082320cc9e5cad49c.png/v1/fill/w_391,h_390,al_c,q_85,enc_auto/62ab43_ccc099e3b9854a3082320cc9e5cad49c.png",
-    },
-    {
+        url: image2,
+    },{
         id: 3,
-        url: "https://static.wixstatic.com/media/62ab43_40a96cce74284fe4904a495e988ba30e.png/v1/fill/w_580,h_580,al_c,q_85,enc_auto/62ab43_40a96cce74284fe4904a495e988ba30e.png ",
+        url: image3,
     },
     {
         id: 4,
-        url: "https://static.wixstatic.com/media/62ab43_69554eddfd8444e994d6b720331b1dad.png/v1/fill/w_484,h_484,al_c,q_85,enc_auto/62ab43_69554eddfd8444e994d6b720331b1dad.png"
+        url: image4,
     },
     {
         id: 5,
-        url: "https://static.wixstatic.com/media/62ab43_bbddc13622544701b0126da388545faf.jpg/v1/fill/w_394,h_394,al_c,q_80,enc_auto/62ab43_bbddc13622544701b0126da388545faf.jpg"
+        url: image5,
     },
     {
         id: 6,
-        url: "https://static.wixstatic.com/media/62ab43_3cac42f39ac348a9a231aa9bf8e1bd0a.png/v1/fill/w_284,h_284,al_c,q_85,enc_auto/62ab43_3cac42f39ac348a9a231aa9bf8e1bd0a.png"
+        url: image6,
     },
     {
         id: 7,
-        url: "https://static.wixstatic.com/media/62ab43_60151ca207774d259d143912e80803db.png/v1/fill/w_569,h_569,al_c,q_85,enc_auto/62ab43_60151ca207774d259d143912e80803db.png"
+        url: image7,
     },
     {
         id: 8,
-        url: "https://static.wixstatic.com/media/62ab43_3f17e888d7af45b7bc1d370a230dd817.jpg/v1/fill/w_612,h_612,al_c,q_85,enc_auto/62ab43_3f17e888d7af45b7bc1d370a230dd817.jpg"
-    },
-    {
+        url: image8,
+    },{
         id: 9,
-        url: "https://static.wixstatic.com/media/62ab43_1740f4d7a79045ec932afdaa5ebb7745.png/v1/fill/w_355,h_355,al_c,q_85,enc_auto/62ab43_1740f4d7a79045ec932afdaa5ebb7745.png"
+        url: image9,
     },
     {
         id: 10,
-        url: "https://static.wixstatic.com/media/62ab43_92b43fd25c7d431e9a7364fbed096dd6.jpg/v1/fill/w_459,h_459,al_c,q_80,enc_auto/62ab43_92b43fd25c7d431e9a7364fbed096dd6.jpg"
+        url: image10,
     },
     {
-        id: 6,
-        url: "https://static.wixstatic.com/media/62ab43_3cac42f39ac348a9a231aa9bf8e1bd0a.png/v1/fill/w_284,h_284,al_c,q_85,enc_auto/62ab43_3cac42f39ac348a9a231aa9bf8e1bd0a.png"
+        id: 11,
+        url: image11,
     },
     {
-        id: 7,
-        url: "https://static.wixstatic.com/media/62ab43_60151ca207774d259d143912e80803db.png/v1/fill/w_569,h_569,al_c,q_85,enc_auto/62ab43_60151ca207774d259d143912e80803db.png"
+        id: 12,
+        url: image12,
     },
     {
-        id: 8,
-        url: "https://static.wixstatic.com/media/62ab43_3f17e888d7af45b7bc1d370a230dd817.jpg/v1/fill/w_612,h_612,al_c,q_85,enc_auto/62ab43_3f17e888d7af45b7bc1d370a230dd817.jpg"
+        id: 13,
+        url: image13,
     },
     {
-        id: 9,
-        url: "https://static.wixstatic.com/media/62ab43_1740f4d7a79045ec932afdaa5ebb7745.png/v1/fill/w_355,h_355,al_c,q_85,enc_auto/62ab43_1740f4d7a79045ec932afdaa5ebb7745.png"
+        id: 14,
+        url: image14,
+    },{
+        id: 15,
+        url: image15,
     },
     {
-        id: 10,
-        url: "https://static.wixstatic.com/media/62ab43_92b43fd25c7d431e9a7364fbed096dd6.jpg/v1/fill/w_459,h_459,al_c,q_80,enc_auto/62ab43_92b43fd25c7d431e9a7364fbed096dd6.jpg"
-    }
+        id: 16,
+        url: image16,
+    },
+    {
+        id: 17,
+        url: image17,
+    },
+    {
+        id: 18,
+        url: image18,
+    },
+    {
+        id: 19,
+        url: image19,
+    },
+    {
+        id: 20,
+        url: image20,
+    },
+    {
+        id: 21,
+        url: image21,
+    },
+    {
+        id: 22,
+        url: image22,
+    },
+    {
+        id: 23,
+        url: image23,
+    },
+    {
+        id: 24,
+        url: image24,
+    },
+    {
+        id: 25,
+        url: image25,
+    },
+    {
+        id: 26,
+        url: image26,
+    },
+    {
+        id: 27,
+        url: image27,
+    },
+    {
+        id: 28,
+        url: image28,
+    },
+    {
+        id: 29,
+        url: image29,
+    },
+    {
+        id: 30,
+        url: image30,
+    },
+
+
 ]

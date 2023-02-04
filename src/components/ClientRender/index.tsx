@@ -13,20 +13,16 @@ function RenderClient(props: ClientImageProps){
 
     return(
         <Transition>
-            <ClientsContainer>
-               
+            <ClientsContainer>               
                 <h5>Portfólio de clientes com trabalhos realizados</h5>
-                <div>
-                    <div>
-                        {
-                            images.map((value, index)=>{
-                                return <img src={value.url} key={index}/>
-                            })
-                        }
-                    </div>
+                <div>                  
+                    {
+                        images.map((value, index)=>{
+                            return <img src={value.url} key={index}/>
+                        })
+                    }                    
                 </div>
             </ClientsContainer>
-
         </Transition>
     )
 
