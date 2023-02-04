@@ -67,11 +67,39 @@ export const ContactFormContainer = styled.div`
 
     @media (min-width: 768px) {
         padding-left: 100px;
+        width: calc(100% - 300px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
         form{
-           width: 50%;
-           border: 1px solid white;
-           border-radius: 5px;
+           width: 75%;
+           border-top: 1px solid white;
+           border-bottom: 1px solid white;
+
            padding: 10px;
+        }
+        
+        .input.message{
+            textarea{
+                height: 200px;
+            }
+        }
+        div:first-of-type{
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social{
+            display: flex;
+            flex-wrap: wrap;
+
+            div{
+                flex-direction: row;
+            }
         }
     }
 

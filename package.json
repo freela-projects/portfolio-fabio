@@ -16,6 +16,7 @@
     "react-i18next": "^12.1.4",
     "react-icons": "^4.7.1",
     "react-intl": "^6.2.6",
+    "react-loader-spinner": "^5.3.4",
     "react-router-dom": "^6.7.0",
     "styled-components": "^5.3.6"
   },
