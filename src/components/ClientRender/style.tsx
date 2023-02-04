@@ -10,6 +10,7 @@ const ClientsContainer = styled.section`
         width: 95%;
         max-width: 800px;
         margin-bottom: 10px;
+        margin-top: 20px;
         font-size: 16.5px;
         display: flex;
         align-items: flex-start;
