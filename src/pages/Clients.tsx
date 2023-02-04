@@ -9,12 +9,21 @@ import { images as publicationsImg } from "../data/fake-data/publications"
 
 
 function Clients() {
+
   return (
     <Main disablePadding>
         <ClientAndPublications>
           <PublicationRender images={publicationsImg}/>
           <RenderClient images={clientsImg}/>
           <ScrollTop />
+          {
+
+            
+
+           
+
+
+            }
         </ClientAndPublications>
     </Main>
   )
