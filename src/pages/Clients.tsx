@@ -16,14 +16,6 @@ function Clients() {
           <PublicationRender images={publicationsImg}/>
           <RenderClient images={clientsImg}/>
           <ScrollTop />
-          {
-
-            
-
-           
-
-
-            }
         </ClientAndPublications>
     </Main>
   )
