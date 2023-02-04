@@ -5,6 +5,8 @@ const Image360Container = styled.section`
     margin-top: 20px;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
+    z-index: 999;
 
     h5{
         display: flex;
@@ -81,7 +83,7 @@ const Image360Box = styled.div`
         color: #fff;
         line-height: 1.3;
         margin-top: 5px;
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     span{
@@ -98,6 +100,9 @@ const Image360Box = styled.div`
             width: 100%;
             height: 100%;
             text-decoration: none;
+        }
+        a{
+            margin-left: 0;
         }
     }        
 `

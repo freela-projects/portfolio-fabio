@@ -13,19 +13,16 @@ const Main = styled.main`
     height: 100vh;
     padding:  ${(props: MainProps) => props.disablePadding ? "0" : "20px"};
     
-
-    
     ::-webkit-scrollbar {
-    width: 5px;               /* width of the entire scrollbar */
+    width: 5px;
     }
 
     ::-webkit-scrollbar-track {
-    background: #000;        /* color of the tracking area */
+    background: #000;  
     }
 
     ::-webkit-scrollbar-thumb {
-    background-color: rgb(53, 120, 95);    /* color of the scroll thumb */
-       /* roundness of the scroll thumb */
+    background-color: rgb(53, 120, 95);
    
     }
     overflow-x: hidden;
