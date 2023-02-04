@@ -28,6 +28,7 @@ const Image360Container = styled.section`
         flex-wrap: wrap;
         align-content:start;
 
+
         h5{
             width: 100%;
         }
