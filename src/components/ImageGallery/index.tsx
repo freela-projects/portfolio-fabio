@@ -24,10 +24,12 @@ function ImageGallery(props: GalleryProps){
     const [viewWidth, setViewWidth] = useState(window.innerWidth)
 
     const handleNextSlide = () => {
+        //@ts-ignore
         imagesHash.get(currentSlide) === images.length - 1 ? setCurrentSlide(images[0].url) : setCurrentSlide(images[imagesHash.get(currentSlide) + 1].url)
     }
 
     const handlePreviousSlide = () => {
+         //@ts-ignore
         imagesHash.get(currentSlide) === 0 ? setCurrentSlide(images[images.length - 1].url) : setCurrentSlide(images[imagesHash.get(currentSlide) - 1].url)
     }
 
@@ -39,16 +41,6 @@ function ImageGallery(props: GalleryProps){
 
     useEffect(() => {
 
-        const keyboardEvents = (event: KeyboardEvent) => {
-            if(event.key === "ArrowRight"){
-                handleNextSlide()
-            } else if(event.key === "ArrowLeft"){
-                handlePreviousSlide()
-            } else if(event.key === "Escape"){
-                handleClose()
-            }
-        }
-        window.addEventListener("keydown", keyboardEvents)
         const onWidthChange = () => {
             setViewWidth(window.innerWidth)
         }
@@ -57,10 +49,20 @@ function ImageGallery(props: GalleryProps){
 
         return () => {
             window.removeEventListener("resize", onWidthChange)
-            window.removeEventListener("keydown", keyboardEvents)
+   
         }
         
     }, [])
+
+    document.onkeydown = (event: KeyboardEvent) => {
+        if(event.key === "ArrowRight"){
+            handleNextSlide()
+        } else if(event.key === "ArrowLeft"){
+            handlePreviousSlide()
+        } else if(event.key === "Escape"){
+            handleClose()
+        }
+}
 
     return (
         <Transition>
