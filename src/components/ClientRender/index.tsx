@@ -1,5 +1,7 @@
 import Transition from "../Transition";
 import { ClientsContainer } from "./style";
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/opacity.css'
 
 interface ClientImageProps {
     images: {
@@ -18,7 +20,10 @@ function RenderClient(props: ClientImageProps){
                 <div>                  
                     {
                         images.map((value, index)=>{
-                            return <img src={value.url} key={index}/>
+                            return <LazyLoadImage 
+                                    effect="opacity"
+                                    src={value.url} 
+                                    key={index}/>
                         })
                     }                    
                 </div>

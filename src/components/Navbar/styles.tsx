@@ -16,12 +16,12 @@ const Nav = styled.nav`
       position: fixed;
       top: 0;
       left: auto;
-      right: 30px;
+      right: 80px;
       z-index: 1;
-      width: 250px;
+      width: 200px;
       height: 100%;
       padding-top: 20px;
-      padding-right: 20px;
+      padding-right: 10px;
       padding-bottom: 80px;
       justify-content: center;
     }
@@ -55,7 +55,7 @@ const NavLink = styled(Link)`
     @media (min-width: 768px) {
         margin: 0;
         font-size: 1.5rem;
-        font-weight: ${(props: NavLinkProps) => props.active === "true" ? "900" : "400"};
+        font-weight: ${(props: NavLinkProps) => props.active === "true" ? "600" : "400"};
         :hover {
             color: "rgb(53, 120, 95)";
             transition: all 0.3s ease-in-out;
@@ -65,7 +65,6 @@ const NavLink = styled(Link)`
 const TextLogo = styled.p`
     width: 250px;
     font-size: 1.7rem;
-    font-weight: 900;
     margin: 0;
     padding-right: 30px;
     padding-top: 30px;

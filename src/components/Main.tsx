@@ -25,8 +25,7 @@ const Main = styled.main`
     background-color: rgb(53, 120, 95);
    
     }
-    overflow-x: hidden;
-    
+      
 `
 
 export default Main
