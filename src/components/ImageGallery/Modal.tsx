@@ -13,6 +13,7 @@ const Modal = ({ imagePath, nextSlide, previousSlide, close }: ModalProps) => {
     return (
         <Background>
             <HStack
+                style={{ position: "absolute", top: 0, right: 0 }}
                 justifyContent="flex-end"
                 width="90%">
                 <div onClick={close}>
@@ -25,7 +26,9 @@ const Modal = ({ imagePath, nextSlide, previousSlide, close }: ModalProps) => {
                     <div onClick={nextSlide}>
                         <MdArrowBackIosNew size={20} />
                     </div>
-                    <img src={imagePath} />
+                    <HStack height="70%">
+                        <img src={imagePath} />
+                    </HStack>
                     <div onClick={previousSlide}>
                         <MdArrowForwardIos size={20} />
                     </div>

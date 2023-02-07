@@ -32,10 +32,9 @@ const Background = styled.div`
     user-select: none;
 
     img{
-        transform: scale(0.3);
-        @media (min-width: 768px) {
-            transform: scale(0.5);
-        }
+       max-height:100%;
+       max-width: 100%; 
+       object-fit: scale-down;
     }
 `
 

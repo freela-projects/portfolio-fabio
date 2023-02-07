@@ -13,24 +13,22 @@ interface GalleryProps {
 
 function ImageGallery(props: GalleryProps){
     const { images } = props
+    const imagesHash = new Map<string, number>()
+    let index = 0 
+    for (const image of images){
+        imagesHash.set(image.url, index)
+        index++
+    }
     const [showModal, setShowModal] = useState(false)
-    const [currentSlide, setCurrentSlide] = useState(0)
+    const [currentSlide, setCurrentSlide] = useState<string>("")
     const [viewWidth, setViewWidth] = useState(window.innerWidth)
 
     const handleNextSlide = () => {
-        if(currentSlide === images.length - 1){
-            setCurrentSlide(0)
-        } else {
-            setCurrentSlide(currentSlide + 1)
-        }
+        imagesHash.get(currentSlide) === images.length - 1 ? setCurrentSlide(images[0].url) : setCurrentSlide(images[imagesHash.get(currentSlide) + 1].url)
     }
 
     const handlePreviousSlide = () => {
-        if(currentSlide === 0){
-            setCurrentSlide(images.length - 1)
-        } else {
-            setCurrentSlide(currentSlide - 1)
-        }
+        imagesHash.get(currentSlide) === 0 ? setCurrentSlide(images[images.length - 1].url) : setCurrentSlide(images[imagesHash.get(currentSlide) - 1].url)
     }
 
     const handleClose = () => {
@@ -84,7 +82,7 @@ function ImageGallery(props: GalleryProps){
                                                     onClick={() => {
                                                         if (viewWidth < 768) return
                                                         setShowModal(true)
-                                                        setCurrentSlide(index)
+                                                        setCurrentSlide(image.url)
                                                     }} />
                                   
                                         )
@@ -97,7 +95,7 @@ function ImageGallery(props: GalleryProps){
                 </Box>
                 {
                     showModal && <Modal 
-                                        imagePath={images[currentSlide].url} 
+                                        imagePath={currentSlide || ""} 
                                         nextSlide={handleNextSlide} 
                                         previousSlide={handlePreviousSlide}
                                         close={handleClose} />
