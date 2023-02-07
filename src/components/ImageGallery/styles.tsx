@@ -32,8 +32,8 @@ const Background = styled.div`
     user-select: none;
 
     img{
-       max-height:100%;
-       max-width: 100%; 
+       max-height: 70vh;
+       max-width: 70vw; 
        object-fit: scale-down;
     }
 `
@@ -48,13 +48,12 @@ const Container = styled.section`
   
   @media only screen and (min-width: 768px) {
       margin: 30px 20px 0 20px;
-      width: 95%;
     }
 `
 const Box = styled.div`
  display: flex;
  flex-direction: column;
- justify-content: space-between;
+ justify-content: center;
  
  @media only screen and (min-width: 768px) {
     flex-direction: row;    
@@ -92,17 +91,18 @@ const Images = styled.div`
     width: 100%;
     padding: 5px;
     border-radius: 5px;
+  }
 
+  @media only screen and (min-width: 768px) {
+   max-width: 200px;
+   img{
     :hover{
         cursor: pointer;
         transform: scale(1.05);
         transition: 0.5s;
 
     }
-  }
-
-  @media only screen and (min-width: 768px) {
-   width: 32.5%;
+   }
   }
 `
 
