@@ -11,7 +11,22 @@ const Main = styled.main`
     justify-content: flex-start;
     width: 100%;
     height: 100vh;
-    padding:  ${(props: MainProps) => props.disablePadding ? "0" : "20px"};;
+    padding:  ${(props: MainProps) => props.disablePadding ? "0" : "20px"};
+    
+    ::-webkit-scrollbar {
+    width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+    background: #000;  
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background-color: rgb(53, 120, 95);
+   
+    }
+    overflow-x: hidden;
+    
 `
 
 export default Main

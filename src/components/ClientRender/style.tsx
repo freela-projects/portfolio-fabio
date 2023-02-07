@@ -2,38 +2,35 @@ import styled from "styled-components";
 
 const ClientsContainer = styled.section`
    
-    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 20px 0 80px 0;
     
     h5{
-        width: 90%;
+        width: 95%;
+        max-width: 800px;
         margin-bottom: 10px;
+        margin-top: 20px;
         font-size: 16.5px;
+        display: flex;
+        align-items: flex-start;
     }
 
     div{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       
-        div:first-child{
-            width: 90%;
-            display: flex;
-            align-items: center;
-            justify-content: start;
-            flex-wrap: wrap;
+        width: 100%;
+        line-height: 0;
+        margin-bottom:70px;
+
+        img{
+            width: 33.333vw;
+            
         }
     }
 
-    img{
-        width: 30vw;
-    }
     
     @media (min-width: 768px) {
-        width: calc(100% - 300px);
+        
+        width: calc(100% - 280px);
         margin-top: 50px;
 
         h5{
@@ -42,7 +39,18 @@ const ClientsContainer = styled.section`
         }
 
         img{
+            
+            height: 130px;
             max-width: 150px;
+
+        }
+        div{
+            width: 100% ;
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: baseline;
+            flex-wrap: wrap;   
         }
     }
 `
