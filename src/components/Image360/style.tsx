@@ -118,6 +118,14 @@ const Vizu = styled.section`
     left: 0;
     z-index: 999;
     background-color: rgba(255,255,255, 0.8) ;
+    @keyframes load-page {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 100;
+        }
+    } animation: load-page 0.5s;
     iframe{
         width: 100%;
         height: 100%;
