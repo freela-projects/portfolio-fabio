@@ -3,7 +3,7 @@ import FirebaseImageGallery from "../components/ImageGallery"
 
 function Events() {
     return (
-        <Main>
+        <Main disablePadding>
             <FirebaseImageGallery storagePath="events"/>
         </Main>
     )

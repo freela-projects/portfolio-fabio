@@ -3,7 +3,7 @@ import FirebaseImageGallery from "../components/ImageGallery"
 
 function Gastronomy() {
     return (
-        <Main>
+        <Main disablePadding>
             <FirebaseImageGallery storagePath="cuisine" />
         </Main>
     )

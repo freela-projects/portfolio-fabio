@@ -3,7 +3,7 @@ import FirebaseImageGallery from "../components/ImageGallery"
 
 function Arts() {
     return (
-        <Main>
+        <Main disablePadding>
             <FirebaseImageGallery storagePath="arts" />
         </Main>
     )

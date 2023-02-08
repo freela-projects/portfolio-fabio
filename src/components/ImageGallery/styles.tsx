@@ -89,13 +89,12 @@ const Images = styled.div`
   flex-direction: column;
   img{
     width: 100%;
-    padding: 5px;
-    border-radius: 5px;
   }
 
   @media only screen and (min-width: 768px) {
    max-width: 200px;
    img{
+    padding: 5px;
     :hover{
         cursor: pointer;
         transform: scale(1.05);

@@ -3,7 +3,7 @@ import FirebaseImageGallery from "../components/ImageGallery"
 
 function Architecture() {
     return (
-        <Main>
+        <Main disablePadding>
             <FirebaseImageGallery storagePath="architecture"/>
         </Main>    
     )

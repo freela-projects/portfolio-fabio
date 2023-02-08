@@ -8,7 +8,7 @@ function About() {
     return (
         <Main 
             style={{alignItems: "center", justifyContent:"center"}}>
-                
+
             <HStack alignItems="flex-start" flexWrap="wrap">
                 <VStack alignItems="flex-start">
                     <img src="https://static.wixstatic.com/media/62ab43_3f9f4f573d014cf59e2a2104de996017.jpg/v1/fill/w_230,h_345,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/62ab43_3f9f4f573d014cf59e2a2104de996017.jpg" alt="Fabio Peixoto" />
