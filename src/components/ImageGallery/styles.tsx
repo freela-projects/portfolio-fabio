@@ -87,19 +87,23 @@ const VStack = styled.div`
 const Images = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+
   img{
     width: 100%;
   }
 
   @media only screen and (min-width: 768px) {
    max-width: 200px;
+
    img{
     padding: 5px;
+    display: flex;
+    justify-content: center;
     :hover{
         cursor: pointer;
         transform: scale(1.05);
         transition: 0.5s;
-
     }
    }
   }
