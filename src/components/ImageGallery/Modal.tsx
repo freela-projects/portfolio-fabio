@@ -11,25 +11,28 @@ interface ModalProps {
 const Modal = ({ imagePath, nextSlide, previousSlide, close }: ModalProps) => {
 
     return (
-        <Background>
-            <HStack
-                style={{ position: "absolute", top: 0, right: 0 }}
+        <Background >
+            <HStack 
+                onClick={close}
+                style={{ position: "absolute", top: 0, right: 0, width:'100vw', height:'100vh'}}
                 justifyContent="flex-end"
+                alignItems="flex-start"
                 width="90%">
                 <div onClick={close}>
                     <MdClose size={40} />
                 </div>
+                
             </HStack>
             <VStack
                 width="90%">
                 <HStack>
-                    <div onClick={nextSlide}>
+                    <div onClick={nextSlide} style={{zIndex:'10'}}>
                         <MdArrowBackIosNew size={20} />
                     </div>
-                    <HStack height="70%">
-                        <img src={imagePath} />
+                    <HStack >
+                        <img src={imagePath} style={{zIndex:'10'}}/>
                     </HStack>
-                    <div onClick={previousSlide}>
+                    <div onClick={previousSlide}style={{zIndex:'10'}}>
                         <MdArrowForwardIos size={20} />
                     </div>
                 </HStack>

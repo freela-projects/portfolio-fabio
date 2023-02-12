@@ -30,6 +30,8 @@ const Main = styled.main`
         overflow-x: hidden;
         
     }
+
+    
     
 `
 
