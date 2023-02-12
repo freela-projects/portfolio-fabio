@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { HStack } from '../ImageGallery/styles'
+import { HStack } from '../FirebaseImageGallery/styles'
 import Button from './styles'
 
 function ScrollTop(){

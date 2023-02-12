@@ -1,5 +1,5 @@
 import Main  from "../components/Main"
-import FirebaseImageGallery from "../components/ImageGallery"
+import FirebaseImageGallery from "../components/FirebaseImageGallery"
 
 function Essays() {
     return (
