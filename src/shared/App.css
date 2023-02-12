@@ -29,3 +29,9 @@ h2{
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: 768px) {
+  .MuiMasonry-root > .imageDiv {
+    width: 100%;
+  }
+}

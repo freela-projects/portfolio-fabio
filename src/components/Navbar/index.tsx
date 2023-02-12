@@ -12,17 +12,61 @@ function Navbar() {
         <Nav>
             <TextLogo translate="no">Fabio Peixoto <span>{translate("motto")}</span></TextLogo>
             <NavLinks>
-                <NavLink to="/ini" active={isActive("/ini")}>{translate('home')}</NavLink>
-                <NavLink to="/arq" active={isActive("/arq")}>{translate('architecture')}</NavLink>
-                <NavLink to="/i360" active={isActive("/i360")}>{translate('Tour360')}</NavLink>
-                <NavLink to="/art" active={isActive("/art")}>{translate('arts')}</NavLink>
-                <NavLink to="/gas" active={isActive("/gas")}>{translate('cuisine')}</NavLink>
-                <NavLink to="/eve" active={isActive("/eve")}>{translate('events')}</NavLink>
-                <NavLink to="/ens" active={isActive("/ens")}>{translate('essays')}</NavLink>
-                <NavLink to="/res" active={isActive("/res")}>{translate('restoration')}</NavLink>
-                <NavLink to="/cli" active={isActive("/cli")}>{translate('clients')}</NavLink>
-                <NavLink to="/sob" active={isActive("/sob")}>{translate('about')}</NavLink>
-                <NavLink to="/con" active={isActive("/con")}>{translate('contact')}</NavLink>
+                <NavLink 
+                    to="/inicio" 
+                    active={isActive("/inicio")}>
+                        {translate('home')}
+                </NavLink>
+                <NavLink 
+                    to="/arquitetura" 
+                    active={isActive("/arquitetura")}>
+                        {translate('architecture')}
+                </NavLink>
+                <NavLink 
+                    to="/tour" 
+                    active={isActive("/tour")}>
+                        {translate('Tour360')}
+                </NavLink>
+                <NavLink 
+                    to="/arte" 
+                    active={isActive("/arte")}>
+                        {translate('arts')}
+                </NavLink>
+                <NavLink 
+                    to="/gastronomia" 
+                    active={isActive("/gastronomia")}>
+                        {translate('cuisine')}
+                </NavLink>
+                <NavLink 
+                    to="/evento" 
+                    active={isActive("/evento")}>
+                        {translate('events')}
+                </NavLink>
+                <NavLink 
+                    to="/ensaio" 
+                    active={isActive("/ensaio")}>
+                        {translate('essays')}
+                </NavLink>
+                <NavLink 
+                    to="/restauracao" 
+                    active={isActive("/restauracao")}>
+                        {translate('restoration')}
+                </NavLink>
+                <NavLink 
+                    to="/cliente" 
+                    active={isActive("/cliente")}>
+                        {translate('clients')}
+                </NavLink>
+                <NavLink 
+                    to="/sobre" 
+                    active={isActive("/sobre")}>
+                        {translate('about')}
+                </NavLink>
+                <NavLink 
+                    to="/" 
+                    active={isActive("/contato")}>
+                        {translate('contact')}
+                </NavLink>
             </NavLinks>
         </Nav>
     )

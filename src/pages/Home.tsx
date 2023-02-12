@@ -9,8 +9,9 @@ function Home() {
   const navigate = useNavigate()
 
   useEffect(()=>{
-    navigate('/ini')
-   },[]) 
+    navigate('/inicio')
+   },[])
+ 
   return (
     <Main disablePadding>
         <Navbar />

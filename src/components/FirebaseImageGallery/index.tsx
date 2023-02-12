@@ -10,6 +10,7 @@ import generateRef from "../../utils/generateRef"
 import Masonry from '@mui/lab/Masonry'
 import Box from '@mui/material/Box'
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import "../../shared/App.css"
 
 interface GalleryProps {
     storagePath: string
@@ -42,7 +43,10 @@ function FirebaseImageGallery(props: GalleryProps) {
         const onWidthChange = () => {
             setViewWidth(window.innerWidth)
             setColumns(getColumnsByViewWidth(window.innerWidth))
+            console.log(viewWidth)
         }
+
+        window.addEventListener("resize", onWidthChange)
 
         const fetchImages = async () => {
             setLoading(true)
@@ -70,7 +74,6 @@ function FirebaseImageGallery(props: GalleryProps) {
         }
         fetchImages()
 
-        window.addEventListener("resize", onWidthChange)
 
         return () => {
             window.removeEventListener("resize", onWidthChange)
@@ -107,12 +110,12 @@ function FirebaseImageGallery(props: GalleryProps) {
                         :
                         <Box 
                             sx={{ minHeight: 829 }}>
-                            <Masonry 
+                            <Masonry
                                 columns={columns} 
                                 spacing={2}
                                 >
                                 {images.map((image, index) => (
-                                    <div
+                                    <div className="imageDiv"
                                         key={image.url}>
                                         <LazyLoadImage
                                             effect="blur"
