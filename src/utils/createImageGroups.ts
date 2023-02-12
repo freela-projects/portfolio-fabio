@@ -1,10 +1,12 @@
 function getColumnsByViewWidth(viewWidth: number) {
     if (viewWidth < 769) {
         return 1
-    } else if (viewWidth >= 768 && viewWidth <= 1024) {
+    } 
+    if (viewWidth >= 768 && viewWidth <= 1024) {
         return 3
-    } else {
-        return 4
+    }
+    if (viewWidth > 1024){
+        return Math.ceil(viewWidth / 300)
     }
 }
 

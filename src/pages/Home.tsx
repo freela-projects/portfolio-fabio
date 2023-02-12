@@ -10,8 +10,7 @@ function Home() {
 
   useEffect(()=>{
     navigate('/ini')
-   },[])
-
+   },[]) 
   return (
     <Main disablePadding>
         <Navbar />

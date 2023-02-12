@@ -2,11 +2,7 @@ import Main  from "../components/Main"
 import FirebaseImageGallery from "../components/FirebaseImageGallery"
 
 function Essays() {
-    return (
-        <Main disablePadding>
-            <FirebaseImageGallery storagePath="essays" />
-        </Main>
-    )
+    return <FirebaseImageGallery storagePath="essays" />
     }
 
 export default Essays

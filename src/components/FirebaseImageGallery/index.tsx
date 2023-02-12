@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { listAll, getDownloadURL } from "firebase/storage"
+import { Container } from "./styles"
 import { Grid } from "react-loader-spinner"
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Modal from "./Modal"
@@ -91,43 +92,49 @@ function FirebaseImageGallery(props: GalleryProps) {
 
     return (
         <Transition>
-            {
-                loading ?
-                    <Grid
-                        height="100"
-                        width="100"
-                        color="#4fa94d"
-                        ariaLabel="grid-loading"
-                        radius="12.5"
-                        wrapperStyle={{}}
-                        wrapperClass=""
-                        visible={true}/>
-                    :
-                    <Box sx={{ minHeight: 829 }}>
-                    <Masonry columns={columns} spacing={2}>
-                        {images.map((image, index) => (
-                            <div 
-                                key={image.url}>
-                                <LazyLoadImage
-                                    effect="blur"
-                                    src={`${image.url}?w=162&auto=format`}
-                                    srcSet={`${image.url}?w=162&auto=format&dpr=2 2x`}
-                                    alt={image.url}
-                                    style={{
-                                        display: 'block',
-                                        width: '100%',
-                                    }}
-                                    onClick={() => {
-                                        if (viewWidth < 768) return
-                                        setShowModal(true)
-                                        setCurrentSlide(index)
-                                    }}
-                                />
-                            </div>
-                        ))}
-                    </Masonry>
-                </Box>
-            }
+            <Container>
+                {
+                    loading ?
+                        <Grid
+                            height="100"
+                            width="100"
+                            color="#4fa94d"
+                            ariaLabel="grid-loading"
+                            radius="12.5"
+                            wrapperStyle={{}}
+                            wrapperClass=""
+                            visible={true} />
+                        :
+                        <Box 
+                            sx={{ minHeight: 829 }}>
+                            <Masonry 
+                                columns={columns} 
+                                spacing={2}
+                                >
+                                {images.map((image, index) => (
+                                    <div
+                                        key={image.url}>
+                                        <LazyLoadImage
+                                            effect="blur"
+                                            src={`${image.url}?w=162&auto=format`}
+                                            srcSet={`${image.url}?w=162&auto=format&dpr=2 2x`}
+                                            alt={image.url}
+                                            style={{
+                                                display: 'block',
+                                                width: '100%',
+                                            }}
+                                            onClick={() => {
+                                                if (viewWidth < 768) return
+                                                setShowModal(true)
+                                                setCurrentSlide(index)
+                                            }}
+                                        />
+                                    </div>
+                                ))}
+                            </Masonry>
+                        </Box>
+                }
+            </Container>
             {
                 showModal &&
                 <Modal

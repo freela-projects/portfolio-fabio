@@ -2,11 +2,8 @@ import Main  from "../components/Main"
 import FirebaseImageGallery from "../components/FirebaseImageGallery"
 
 function Gastronomy() {
-    return (
-        <Main disablePadding>
-            <FirebaseImageGallery storagePath="cuisine" />
-        </Main>
-    )
+    return <FirebaseImageGallery storagePath="cuisine" />
+
     }
 
 export default Gastronomy

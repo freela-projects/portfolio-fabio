@@ -16,11 +16,10 @@ const Nav = styled.nav`
       position: fixed;
       top: 0;
       left: auto;
-      right: 80px;
+      right: 5%;
       z-index: 1;
       width: 250px;
-      height: 100%;
-      padding-top: 20px;
+      height: 100%;      
       padding-right: 10px;
       padding-bottom: 80px;
       justify-content: center;

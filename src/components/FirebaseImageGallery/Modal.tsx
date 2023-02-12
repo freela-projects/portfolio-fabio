@@ -21,17 +21,18 @@ const Modal = ({ imagePath, nextSlide, previousSlide, close }: ModalProps) => {
                 </div>
             </HStack>
             <VStack
-                width="90%">
+                width="90%"
+                style={{zIndex: 2}}>
                 <HStack>
-                    <div onClick={nextSlide}>
-                        <MdArrowBackIosNew size={20} />
-                    </div>
+                    <button onClick={nextSlide} id="next">
+                        <MdArrowBackIosNew size={30} />
+                    </button>
                     <HStack height="70%">
                         <img src={imagePath} />
                     </HStack>
-                    <div onClick={previousSlide}>
-                        <MdArrowForwardIos size={20} />
-                    </div>
+                    <button onClick={previousSlide} id="previous">
+                        <MdArrowForwardIos size={30} />
+                    </button>
                 </HStack>
             </VStack>
         </Background>
