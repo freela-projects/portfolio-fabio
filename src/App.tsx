@@ -26,7 +26,7 @@ const [appLanguage, setAppLanguage] = useState("pt")
 
 useEffect(()=>{
   if (userLocation) {
-      setAppLanguage(userLocation)
+      setAppLanguage(userLocation === "BR" ? "pt" : "en")
   }
 }, [])
 
