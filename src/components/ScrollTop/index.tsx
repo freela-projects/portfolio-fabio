@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { HStack } from '../FirebaseImageGallery/styles'
 import Button from './styles'
+import translate from '../../utils/translate'
 
 function ScrollTop(){
     const [showButton, setShowButton] = useState(false)
@@ -29,7 +30,7 @@ function ScrollTop(){
        <HStack> 
         {
             showButton ? 
-            <Button onClick={handleClick}>Voltar ao topo</Button> 
+            <Button onClick={handleClick}>{translate("backToTop")}</Button> 
             : 
             <></>
         }

@@ -39,6 +39,7 @@ const NavLinks = styled.ul`
         justify-content: space-evenly;
         flex-direction: column;
         height: 100%;
+        padding: 0;
     }
 `;
 interface NavLinkProps {

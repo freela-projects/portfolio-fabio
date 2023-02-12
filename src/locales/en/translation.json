@@ -7,9 +7,11 @@
     "arts": "Arts",
     "cuisine": "Gastronomy",
     "events": "Events",
-    "essays": "Essays",
+    "essays": "Portrait",
     "restoration": "Restorations",
     "clients": "Customers",
+    "booksAndMagazines": "Books and Magazines",
+    "portfolios": "Customer portfolio with completed work",
     "about": "About",
     "contact": "Contact",
     "contactNameLabel": "Name",
@@ -18,5 +20,7 @@
     "contactMessageLabel": "Message",
     "contactSocialNetworkFollowLabel": "Follow me on social networks",
     "contactSendButton" : "send",
-    "motto": "Photograpy" 
+    "motto": "Photograpy" ,
+    "backToTop": "Back to top",
+    "backButton": "Back"
  }
