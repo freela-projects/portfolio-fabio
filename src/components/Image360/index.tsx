@@ -49,7 +49,7 @@ function View(props: any){
             <Vizu className={`${viewActive? 'opend':'disabled'}`}>
                 <InfinitySpin color='rgb(53, 120, 95)'/>
                 <iframe allowFullScreen={true} autoCapitalize='yes' src={`${image.url}`} autoCorrect='no'/>
-                <p onClick={()=>setViewActive(!viewActive)}>Voltar</p>
+                <p onClick={()=>setViewActive(!viewActive)}>{translate("backButton")}</p>
             </Vizu>
 
         </Image360Box>

@@ -1,5 +1,5 @@
-import { Slide, SlideShow, Slider } from "./styles"
-import { useState, useEffect, useRef } from "react"
+import { SlideShow } from "./styles"
+import { useState, useEffect } from "react"
 
 interface SlidesProps {
   images: {
@@ -9,46 +9,26 @@ interface SlidesProps {
 }
 
 function Slides({ images }: SlidesProps) {
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const [show, setShow] = useState(false)
-  const delay = 2000
-
-  const timeoutRef = useRef(null)
-
-  function resetTimeout() {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  }
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const delay = 3000
 
   useEffect(() => {
-    resetTimeout();
-    // @ts-ignore
-    timeoutRef.current = setTimeout(
-      () =>
-        {
-          setShow(!show)
-        setCurrentSlide((prevIndex) =>
-          prevIndex === images.length - 1 ? 0 : prevIndex + 1
-        )},
-      delay
-    );
-
-    return () => {
-      resetTimeout();
-    };
-  }, [currentSlide])
+    const intervalId = setInterval(() => {
+      setCurrentIndex(currentIndex => (currentIndex + 1) % images.length)
+    }, delay);
+    return () => clearInterval(intervalId);
+  }, [images.length])
 
   return (
       <SlideShow>
-        {show && (
-          <Slider
-            style={{ transform: `translate3d(${-currentSlide * 100}%, 0, 0)` }}>
-            {images.map((image) => (
-              <Slide key={image.id} src={image.url} />
-            ))}
-          </Slider>
-        )}
+        {images.map((image, index) => (
+          <img 
+            style={{opacity: `${index === currentIndex ? 1 : 0}`}}
+            key={image.id} 
+            src={image.url} 
+            loading="eager"
+            alt="slide" />
+        ))}
       </SlideShow>
   )
 }

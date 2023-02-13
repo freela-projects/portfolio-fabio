@@ -9,7 +9,7 @@ interface ModalProps {
 }
 
 const Modal = ({ imagePath, nextSlide, previousSlide, close }: ModalProps) => {
-
+    
     return (
         <Background >
             <HStack 
@@ -24,7 +24,8 @@ const Modal = ({ imagePath, nextSlide, previousSlide, close }: ModalProps) => {
                 
             </HStack>
             <VStack
-                width="90%">
+                width="90%"
+               >
                 <HStack>
                     <div onClick={nextSlide} style={{zIndex:'10'}}>
                         <MdArrowBackIosNew size={20} />

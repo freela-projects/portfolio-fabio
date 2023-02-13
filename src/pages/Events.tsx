@@ -1,12 +1,8 @@
 import Main  from "../components/Main"
-import FirebaseImageGallery from "../components/ImageGallery"
+import FirebaseImageGallery from "../components/FirebaseImageGallery"
 
 function Events() {
-    return (
-        <Main disablePadding>
-            <FirebaseImageGallery storagePath="events"/>
-        </Main>
-    )
+    return <FirebaseImageGallery storagePath="events"/>
     }
 
 export default Events

@@ -26,7 +26,7 @@ const [appLanguage, setAppLanguage] = useState("pt")
 
 useEffect(()=>{
   if (userLocation) {
-      setAppLanguage(userLocation)
+      setAppLanguage(userLocation === "BR" ? "pt" : "en")
   }
 }, [])
 
@@ -36,20 +36,20 @@ useEffect(()=>{
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home/>}>
-              <Route path="ini" element={<SlidesImage/>} />
-              <Route path="arq" element={<Architecture/>} />
-              <Route path="i360" element={<Image360/>} />
-              <Route path="art" element={<Arts/>} />
-              <Route path="gas" element={<Gastronomy/>} />
-              <Route path="eve" element={<Events/>} />
-              <Route path="ens" element={<Essays/>} />
-              <Route path="res" element={<Restores/>} />
-              <Route path="cli" element={<Clients/>} />
-              <Route path="sob" element={<About/>} />
-              <Route path="con" element={<ContactMe/>} />
+              <Route path="inicio" element={<SlidesImage/>} />
+              <Route path="arquitetura" element={<Architecture/>} />
+              <Route path="tour" element={<Image360/>} />
+              <Route path="arte" element={<Arts/>} />
+              <Route path="gastronomia" element={<Gastronomy/>} />
+              <Route path="evento" element={<Events/>} />
+              <Route path="ensaio" element={<Essays/>} />
+              <Route path="restauracao" element={<Restores/>} />
+              <Route path="cliente" element={<Clients/>} />
+              <Route path="sobre" element={<About/>} />
+              <Route path="contato" element={<ContactMe/>} />
             </Route>
 
-            <Route index path="*" element={<Navigate to="/ini" />} />
+            <Route index path="*" element={<Navigate to="/inicio" />} />
 
           </Routes>
         </BrowserRouter>

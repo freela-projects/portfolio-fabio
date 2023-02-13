@@ -1,3 +1,4 @@
+import translate from "../../utils/translate";
 import Transition from "../Transition";
 import { ClientsContainer } from "./style";
 import { LazyLoadImage } from 'react-lazy-load-image-component'
@@ -16,7 +17,7 @@ function RenderClient(props: ClientImageProps){
     return(
         <Transition>
             <ClientsContainer>               
-                <h5>Portfólio de clientes com trabalhos realizados</h5>
+                <h5>{translate("portfolios")}</h5>
                 <div>                  
                     {
                         images.map((value, index)=>{

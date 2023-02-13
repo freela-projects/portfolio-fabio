@@ -1,4 +1,4 @@
-import { HStack, VStack } from "../components/ImageGallery/styles"
+import { HStack, VStack } from "../components/FirebaseImageGallery/styles"
 import {BsInstagram, BsFacebook} from "react-icons/bs"
 import Main from "../components/Main"
 import Text from "../components/Text"

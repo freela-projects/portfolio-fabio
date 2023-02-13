@@ -14,7 +14,7 @@ const Button = styled.button`
     text-align: center;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    width: 200px;
+    width: 300px;
     position: fixed;
     bottom: 0;
     z-index: 2;

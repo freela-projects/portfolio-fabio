@@ -1,11 +1,11 @@
 import Main  from "../components/Main"
-import FirebaseImageGallery from "../components/ImageGallery"
+import FirebaseImageGallery from "../components/FirebaseImageGallery"
 
 function Architecture() {
     return (
-        <Main disablePadding>
+
             <FirebaseImageGallery storagePath="architecture"/>
-        </Main>    
+ 
     )
     }
 

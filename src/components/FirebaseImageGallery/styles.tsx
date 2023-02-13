@@ -1,9 +1,5 @@
 import styled from "styled-components"
 
-interface ImageProps {
-    disableMargin?: boolean
-}
-
 interface StackViewProps {
     width?: string
     height?: string
@@ -13,7 +9,6 @@ interface StackViewProps {
     margin?: string | number
 
 }
-
 const Background = styled.div`
     display: flex;
     flex-direction: column;
@@ -26,41 +21,45 @@ const Background = styled.div`
     bottom: 0;
     height: 100vh;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     user-select: none;
+
+ 
 
     img{
        max-height: 70vh;
        max-width: 70vw; 
        object-fit: scale-down;
     }
-`
 
+    button {
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        font-size: 30px;
+        margin: 10px;
+    }
+`
 const Container = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
   
   @media only screen and (min-width: 768px) {
-      margin: 30px 20px 0 20px;
+      margin-top: 30px;
+      margin-left: calc(5%);
+      margin-right: calc(250px + 5%);
+      width: calc(100% - (250px + 10%));
+      max-width: 90%;
     }
 `
-const Box = styled.div`
- display: flex;
- flex-direction: column;
- justify-content: center;
- 
- @media only screen and (min-width: 768px) {
-    flex-direction: row;    
-    margin-right: 280px;
-    }
-`
-
 const HStack = styled.div`
     display: flex;
     flex-direction: row;
@@ -71,8 +70,8 @@ const HStack = styled.div`
     justify-content: ${(props: StackViewProps) => props.justifyContent ? props.justifyContent : "center"};
     padding: 5px;
     margin: ${(props: StackViewProps) => props.margin ? props.margin : "0"};
-`
 
+`
 const VStack = styled.div`
     display: flex;
     flex-direction: column;
@@ -82,27 +81,6 @@ const VStack = styled.div`
     justify-content: ${(props: StackViewProps) => props.justifyContent ? props.justifyContent : "center"};
     padding: 5px;
     margin: ${(props: StackViewProps) => props.margin ? props.margin : "0"};
+   
 `
-
-const Images = styled.div`
-  display: flex;
-  flex-direction: column;
-  img{
-    width: 100%;
-  }
-
-  @media only screen and (min-width: 768px) {
-   max-width: 200px;
-   img{
-    padding: 5px;
-    :hover{
-        cursor: pointer;
-        transform: scale(1.05);
-        transition: 0.5s;
-
-    }
-   }
-  }
-`
-
-export { Background, Container, Box, HStack, VStack, Images }
+export { Background, Container, HStack, VStack }
