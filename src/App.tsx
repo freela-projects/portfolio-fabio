@@ -46,7 +46,7 @@ useEffect(()=>{
               <Route path="restauracao" element={<Restores/>} />
               <Route path="cliente" element={<Clients/>} />
               <Route path="sobre" element={<About/>} />
-              <Route path="conato" element={<ContactMe/>} />
+              <Route path="contato" element={<ContactMe/>} />
             </Route>
 
             <Route index path="*" element={<Navigate to="/inicio" />} />

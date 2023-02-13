@@ -2,15 +2,17 @@ import { useState, useEffect } from "react"
 import { listAll, getDownloadURL } from "firebase/storage"
 import { Container } from "./styles"
 import { Grid } from "react-loader-spinner"
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import Modal from "./Modal"
 import Transition from "../Transition"
 import getColumnsByViewWidth from "../../utils/createImageGroups"
 import generateRef from "../../utils/generateRef"
 import Masonry from '@mui/lab/Masonry'
 import Box from '@mui/material/Box'
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import 'react-lazy-load-image-component/src/effects/blur.css'
 import "../../shared/App.css"
+import translate from "../../utils/translate"
+import ErrorAction from "../ErrorAction"
 
 interface GalleryProps {
     storagePath: string
@@ -25,6 +27,7 @@ function FirebaseImageGallery(props: GalleryProps) {
     const [currentSlide, setCurrentSlide] = useState(0)
     const [viewWidth, setViewWidth] = useState(window.innerWidth)
     const [columns, setColumns] = useState(getColumnsByViewWidth(viewWidth))
+    const [errorMessage, setErrorMessage] = useState<string | undefined>()
 
     const handleNextSlide = () => {
         images.length - 1 > currentSlide ? setCurrentSlide(currentSlide + 1) : setCurrentSlide(0)
@@ -67,6 +70,7 @@ function FirebaseImageGallery(props: GalleryProps) {
             }
             catch (err) {
                 console.log(err)
+                setErrorMessage(translate("firebaseConnectionError"))
             }
             finally {
                 setLoading(false)
@@ -145,6 +149,13 @@ function FirebaseImageGallery(props: GalleryProps) {
                     nextSlide={handleNextSlide}
                     previousSlide={handlePreviousSlide}
                     close={handleClose}
+                />
+            }
+            {
+                errorMessage &&
+                <ErrorAction
+                    text={errorMessage}
+                    type="error"
                 />
             }
         </Transition>

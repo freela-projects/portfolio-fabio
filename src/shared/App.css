@@ -34,4 +34,8 @@ h2{
   .MuiMasonry-root > .imageDiv {
     width: 100%;
   }
+
+  .MuiMasonry-root > .imageDiv span {
+    width: 100%;
+  }
 }

@@ -63,7 +63,7 @@ function Navbar() {
                         {translate('about')}
                 </NavLink>
                 <NavLink 
-                    to="/" 
+                    to="/contato" 
                     active={isActive("/contato")}>
                         {translate('contact')}
                 </NavLink>

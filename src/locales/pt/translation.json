@@ -6,10 +6,10 @@
    "Tour360Href": "Confira",
    "arts": "Obras de Arte",
    "cuisine": "Gastronomia",
-   "events": "Eventos",
-   "essays": "Ensaios",
+   "events": "Evento",
+   "essays": "Ensaio",
    "restoration": "Restauração",
-   "clients": "Clientes",
+   "clients": "Cliente",
    "booksAndMagazines": "Livros e Revistas",
    "portfolios": "Portfólio de clientes com trabalhos realizados",
    "about": "Sobre",
@@ -23,5 +23,7 @@
    "motto": "Fotografia",
    "aboutAuthorText" : "Fabio Peixoto é formado em Biologia pela Universidade Estadual de Feira de Santana, mas encontrou na fotografia a liberdade e expressão que sempre procurava. Não é à toa que desde 2012 atua como profissional na área em Salvador e já produziu material com diversos clientes e continua sempre à procura do seu melhor, não só na fotografia mas o melhor nas relações interpessoais com seus clientes. Sempre com bom humor e sorriso no rosto percebe que um bom trabalho gira em torno de responsabilidade e uma boa relação entre as pessoas. Atua nas áreas de Arquitetura e Decoração, Fotografia panorâmica 360º, Publicidade, Gastronomia, Moda, Still/Produtos, Shows, Eventos Culturais, Sociais e Corporativos.",
    "backToTop": "Voltar ao topo",
-   "backButton": "Voltar"
+   "backButton": "Voltar",
+   "firebaseConnectionError": "Erro de conexão com o servidor.",
+   "tryAgain": "Tentar novamente"
 }
