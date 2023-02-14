@@ -1,15 +1,15 @@
 {
     "home": "Home",
     "architecture": "Architecture",
-    "Tour360": "Tour 360",
+    "Tour360": "Virtual Tour",
     "Tour360PageTitle": "360 PHOTOS | VIRTUAL TOUR",
     "Tour360Href": "See",
-    "arts": "Arts",
+    "arts": "Art",
     "cuisine": "Gastronomy",
-    "events": "Events",
+    "events": "Event",
     "essays": "Portrait",
-    "restoration": "Restorations",
-    "clients": "Customers",
+    "restoration": "Restoration",
+    "clients": "Customer",
     "booksAndMagazines": "Books and Magazines",
     "portfolios": "Customer portfolio with completed work",
     "about": "About",
@@ -22,5 +22,7 @@
     "contactSendButton" : "send",
     "motto": "Photograpy" ,
     "backToTop": "Back to top",
-    "backButton": "Back"
+    "backButton": "Back",
+    "firebaseConnectionError": "Error connecting to the database.",
+    "tryAgain": "Try again"
  }
