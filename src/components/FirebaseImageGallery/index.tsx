@@ -35,7 +35,6 @@ function FirebaseImageGallery(props: GalleryProps) {
     }
 
     const handleClose = () => {
-        console.log('clicou')
         setShowModal(false)
     }
 
