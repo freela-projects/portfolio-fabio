@@ -26,9 +26,7 @@ const Background = styled.div`
     -webkit-backdrop-filter: blur(20px);
     user-select: none;
 
-    :first-child{
-        pointer-events: none;
-    }
+ 
 
     img{
        max-height: 70vh;
@@ -72,6 +70,7 @@ const HStack = styled.div`
     justify-content: ${(props: StackViewProps) => props.justifyContent ? props.justifyContent : "center"};
     padding: 5px;
     margin: ${(props: StackViewProps) => props.margin ? props.margin : "0"};
+
 `
 const VStack = styled.div`
     display: flex;
@@ -82,5 +81,6 @@ const VStack = styled.div`
     justify-content: ${(props: StackViewProps) => props.justifyContent ? props.justifyContent : "center"};
     padding: 5px;
     margin: ${(props: StackViewProps) => props.margin ? props.margin : "0"};
+   
 `
 export { Background, Container, HStack, VStack }

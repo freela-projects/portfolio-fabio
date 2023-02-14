@@ -13,11 +13,11 @@ function Home() {
    },[])
  
   return (
-    <Main disablePadding>
-        <Navbar />
-        <Outlet />
-        <ScrollTop />
-    </Main>
+      <Main disablePadding>
+          <Navbar />
+          <Outlet />
+          <ScrollTop />
+      </Main>
   )
 }
 

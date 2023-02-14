@@ -35,7 +35,7 @@ function Clients() {
   return (
     <Main disablePadding>
         <ClientAndPublications>
-          <PublicationRender images={publicationsImg}/>
+          <PublicationRender publications={publicationsImg}/>
           <RenderClient images={clientsImg}/>
         </ClientAndPublications>
     </Main>
