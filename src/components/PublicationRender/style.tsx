@@ -16,11 +16,11 @@ const PublicationContainer = styled.section`
         align-items: flex-start;
     }
 
-    div{
+    .rendering{
         
         width: 100%;
         line-height: 0;
-        
+       
         img{
             width: 33.33vw;   
             height: 38.64vw;
@@ -36,21 +36,27 @@ const PublicationContainer = styled.section`
             margin-bottom: 15px;
         }
 
-        img{
-            height: 171.6px;
-            max-width: 130px;
-            max-height: 171.6px;
-        }
-        div{
+        .rendering{
             width: 100% ;
             max-width: 800px;
             display: flex;
             align-items: center;
             justify-content: baseline;
-            flex-wrap: wrap;     
+            flex-wrap: wrap;    
+            
+            img{
+                height: 171.6px;
+                max-width: 130px;
+                max-height: 171.6px;
+                &:hover{
+                transform: scale(0.94);
+                }
+            }
         }
     }
 
 `
 
-export { PublicationContainer }
+
+
+export { PublicationContainer,  }
