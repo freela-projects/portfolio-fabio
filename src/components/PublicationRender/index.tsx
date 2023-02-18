@@ -14,10 +14,11 @@ interface PublicationProps {
 }
 
 function PublicationRender(props: PublicationProps){
+
     const { publications } = props
-   
     const [currentSlide, setCurrentSlide] = useState(0)
     const [showModal, setShowModal] = useState(false)
+    const [viewWidth, setViewWidth] = useState(window.innerWidth)
 
     const handleNextSlide = () => {
         publications.length - 1 > currentSlide ? setCurrentSlide(currentSlide + 1) : setCurrentSlide(0)
@@ -54,7 +55,7 @@ function PublicationRender(props: PublicationProps){
                                         key={index} 
                                         effect="opacity"
                                         onClick={() => {
-                                           
+                                            if (viewWidth < 768) return
                                             setShowModal(true)
                                             setCurrentSlide(index)
                                         }}
