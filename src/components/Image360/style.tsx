@@ -7,6 +7,7 @@ const Image360Container = styled.section`
     align-items: center;
     width: 100vw;
     z-index: 999;
+  
 
     h5{
         display: flex;
@@ -45,37 +46,37 @@ const Image360Container = styled.section`
             max-width: 800px;
             display: flex;
             flex-wrap: wrap;
-            align-items: center;
             justify-content: center;
             
             div:first-of-type{
                 width: 100%;
-                max-width: 800px;
+                max-width: 780px;
                 max-height: 500px;
-                height: 60vh;
                 display: flex;
                 justify-content: flex-start;
                 flex-direction: row;
+                margin-top: 0;
+                margin-bottom: 20px;
+                padding: 0;
 
                 img{
                     width: 100%;
-
+                    height: auto;
+                    margin-top: 0;
                 }
             }
         }
-        
     }  
 `
 const Image360Box = styled.div`
     display: flex;
     width: 100vw;
     flex-direction: column;
-    margin: 15px 0 15px 0;
+    margin: 15px 0;
     border-radius: 5px;
 
     img{
         border-radius: 5px;  
-        height: 65vw ;
     }
     
     a{
@@ -90,18 +91,37 @@ const Image360Box = styled.div`
         text-decoration: underline;
         font-style: italic;
     }
-    
+
     @media (min-width: 768px) {
-        width: 13.5vw;
-        height: 13.5vw;
-        padding: 10px;
+        width: 25%;
+        max-height: 150px;
         
+        padding: 10px;
+        margin-bottom: 70px;
+        margin-left: 0;
         img{
-            width: 100%;
-            height: 100%;
+            min-height: 70%;
             text-decoration: none;
         }
         a{
+            min-height: 30%;
+        }
+    }
+    
+    @media (min-width: 1020px) {
+        width: 25%;
+        max-height: 200px;
+        max-width: 200px;
+        height: auto;
+        margin-bottom: 35px;
+        padding: 10px;
+        
+        img{
+            min-height: 70%;
+            text-decoration: none;
+        }
+        a{
+            min-height: 30%;
             margin-left: 0;
         }
     }        

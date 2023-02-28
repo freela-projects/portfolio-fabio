@@ -19,7 +19,6 @@ function Image360Render(props: Image360Props){
         <Transition>
             <Image360Container>
                 <div>
-                    <h5>{translate("Tour360PageTitle")}</h5>
                     {
                         images.map((image, index) => {
                             return <View image={image} key={index}/>
