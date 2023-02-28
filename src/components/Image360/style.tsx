@@ -2,11 +2,15 @@ import styled from "styled-components";
 
 const Image360Container = styled.section`
     display: flex;
-    margin-top: 20px;
+    
     flex-direction: column;
     align-items: center;
     width: 100vw;
     z-index: 999;
+
+    div:first-of-type{
+        margin-top: 0;
+    }
   
 
     h5{
@@ -18,7 +22,7 @@ const Image360Container = styled.section`
 
     @media (max-width: 768px){
         div:last-child{
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
     }
 
@@ -28,7 +32,7 @@ const Image360Container = styled.section`
         
         align-items: center;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 30px;
         flex-direction: row;
         flex-wrap: wrap;
         align-content:start;
@@ -73,10 +77,10 @@ const Image360Box = styled.div`
     width: 100vw;
     flex-direction: column;
     margin: 15px 0;
-    border-radius: 5px;
+    margin-top: 30px;
 
     img{
-        border-radius: 5px;  
+       
     }
     
     a{
@@ -99,9 +103,11 @@ const Image360Box = styled.div`
         padding: 10px;
         margin-bottom: 70px;
         margin-left: 0;
+        margin-top: 0;
         img{
             min-height: 70%;
             text-decoration: none;
+            border-radius: 5px;
         }
         a{
             min-height: 30%;

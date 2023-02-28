@@ -85,8 +85,6 @@ function FirebaseImageGallery(props: GalleryProps) {
 
     }, [])
 
-
-
     document.onkeydown = (event: KeyboardEvent) => {
         if (event.key === "ArrowRight") {
             handleNextSlide()

@@ -9,6 +9,7 @@ interface StackViewProps {
     margin?: string | number
 
 }
+
 const Background = styled.div`
     display: flex;
     flex-direction: column;
