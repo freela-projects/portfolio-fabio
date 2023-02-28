@@ -114,7 +114,7 @@ function FirebaseImageGallery(props: GalleryProps) {
                             sx={{ minHeight: 829 }}>
                             <Masonry
                                 columns={columns} 
-                                spacing={2}
+                                spacing={1}
                                 >
                                 {images.map((image, index) => (
                                     <div className="imageDiv"
